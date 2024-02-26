@@ -1,0 +1,188 @@
+
+:root {
+    --bg: #27346d;
+    --bg2: #ff4f4f;
+    --bg-content: #fff;
+    --color: #000;
+    overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-content: #1d1d1d;
+        --color: #c9c9c9;
+    }
+
+    a:visited {
+        color: #8e3bbe;
+    }
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--color);
+    margin: 0%;
+    cursor: url("/res/icons/cursor-32.png"), auto;
+}
+
+.badges {
+    /* width: 100px; */
+    /* width: auto; */
+    /* width: 100%;  */
+    /* height: 100%;  */
+    /* border: none;  */
+}
+
+.theme-1 {
+    background-image: url('/res/pixel-gradient.png');
+    background-repeat: repeat-x;
+    --bg: #27346d;
+    --bg2: #ff4f4f;
+}
+
+.theme-2 {
+    background-size: 100px;
+    background-image: url('/res/sona/valiKrump\ BG\ by\ Tischotter.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: #fff;
+    background-blend-mode: multiply;
+    --bg: #0064ff;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+/* Marquee Start */
+
+.marquee {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+
+    p {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        font-size: xx-large;
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: scroll-left 2s linear infinite;
+        -webkit-animation: scroll-left 2s linear infinite;
+        animation: scroll-left 30s linear infinite;
+    }
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+/* Marquee End */
+
+
+
+/* Wordart start */
+
+.wordart {
+    /* transform: scaleY(1.5) skewY(-8deg) rotateZ(-3deg) translateZ(0); */
+}
+
+.wordart .preview {
+    font-family: Impact, sans-serif;
+    color: transparent;
+    background: linear-gradient(to bottom left, #fee601, #fee601 15%, #fe4201);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.wordart .preview::before {
+    position: absolute;
+    content: attr(data-content);
+    z-index: -1;
+    text-shadow: 1px 0 0 #813300, 0 1px 0 #c14d00, 2px 1px 0.35px #813300, 1px 2px 0.35px #c14d00, 3px 2px 0.35px #813300, 2px 3px 0.35px #c14d00, 4px 3px 0.35px #813300, 3px 4px 0.35px #c14d00, 5px 4px 0.35px #813300, 4px 5px 0.35px #c14d00, 6px 5px 0.35px #813300, 5px 6px 0.35px #c14d00, 7px 6px 0.35px #813300, 6px 7px 0.35px #c14d00;
+}
+
+/* Wordart end */
+
+.rainbow
+{
+  background: -webkit-gradient(linear, left top, right top, from(#ff0000), color-stop(#ffa600), color-stop(#fff500), color-stop(#06ff00), color-stop(#00c9ff), color-stop(#2300ff), color-stop(#ff00fa), to(#ff0000));
+  background: -o-linear-gradient(left, #ff0000, #ffa600, #fff500, #06ff00, #00c9ff, #2300ff, #ff00fa, #ff0000);
+  background: linear-gradient(to right, #ff0000, #ffa600, #fff500, #06ff00, #00c9ff, #2300ff, #ff00fa, #ff0000);
+    background-size: auto;
+    background-clip: border-box;
+  background-size: 200% auto;
+  color: rgba(0, 0, 0, 0.0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: rainbow4 1s linear infinite;
+  animation: rainbow4 1s linear infinite;
+}
+
+
+@-webkit-keyframes rainbow4 {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes rainbow4 {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Status cafe */
+
+#statuscafe {
+    padding: .5em;
+    /* background-color: azure; */
+    border: 1px dashed red;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}

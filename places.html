@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vali's Places</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="shortcut icon" href="/res/icons/favicon.ico" type="image/x-icon">
+    <style>
+        #wrapper {
+            height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            position: absolute;
+            width: 100vw;
+            padding-bottom: 60px;
+        }
+
+        header {
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: var(--bg-content);
+            /* position: sticky;
+            top: 0px;
+            z-index: 100; */
+        }
+
+        .main {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            background-color: var(--bg-content);
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            /* height: 100%; */
+        }
+
+        .card {
+            background-color: var(--bg-content);
+            padding: 20px;
+            /* padding-left: 20px; */
+            margin: 2px;
+            /* flex-direction: row; */
+        }
+
+        .col-left {
+            position: sticky;
+            max-width: 20px;
+            /* top: 20px; */
+        }
+
+        .col-left,
+        .col-right {
+            /* width: 20%; */
+            min-width: fit-content;
+            /* width: 250px; */
+        }
+
+        .col-center {
+            max-width: 500px;
+            /* width: 50% */
+        }
+
+        #wrapper>footer {
+            color: white;
+            background-color: var(--bg);
+            width: 100%;
+            /* height: 9vh; */
+            /* z-index: 10; */
+            /* border: 1px solid black; */
+            bottom: 0;
+            position: fixed;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .row {
+            /* flex-direction: row;
+            width: 100%; */
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .center {
+            margin: 0 auto;
+        }
+
+        #copyright {
+            font-size: x-small;
+        }
+
+        #construction {
+            color: red;
+            font-size: x-large;
+        }
+
+        nav>ul {
+            list-style-image: url('res/icons/folder-closed-16.png');
+        }
+
+        nav>ul>li#active {
+            list-style-image: url('res/icons/folder-open-16.png');
+        }
+
+        nav>ul>li>ul>li {
+            list-style-image: none;
+            list-style-type: '├─';
+            padding-left: 5px;
+        }
+
+        h1 {
+            font-size: xxx-large;
+        }
+
+        ul>li.done,
+        ul>li>.done {
+            text-decoration: line-through;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flip-vert {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+        .badges {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Fun stuff */
+
+        #gremlin {
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            /* -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); */
+            position: fixed;
+        }
+
+        #valiPls {
+            position: absolute;
+            bottom: 20px;
+            right: 100px;
+        }
+
+        #walkingdog {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        /* Fun stuff end */
+
+        #changelog {
+            overflow: scroll;
+            height: 200px;
+        }
+
+        #furryring {
+            max-width: inherit;
+            min-width: inherit;
+            margin: 2px !important;
+        }
+    </style>
+    <base target="">
+</head>
+
+<body id="theme" class="theme-2">
+    <div id="wrapper">
+        <div class="container">
+            <header>
+                <div class="wordart title">
+                    <h1 class="preview">Vali's Homepage</h1>
+                </div>
+            </header>
+            <div class="main">
+                <div class="column col-left">
+                    <nav class="card">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li id="active"><a href="places.html">Places</a></li>
+                            <li><a href="links.html">Links</a></li>
+                        </ul>
+                    </nav>
+                    <div class="card" id="statuscafe">
+                        <div id="statuscafe-username"></div>
+                        <div id="statuscafe-content"></div>
+                    </div>
+                    <script src="https://status.cafe/current-status.js?name=vali" defer></script>
+                    <div class="card">
+                        <a href="https://bsky.app/profile/vali.link" target="_blank"><img src="res/bsky-dark.png"
+                                alt="Bluesky: vali.link"></a><br>
+                        <!-- BSky: <a href="https://bsky.app/profile/vali.link">@vali.link</a> -->
+                        <a href="https://64.media.tumblr.com/7cacc158fec8d2d2b3f451426151ba66/78c75168f9ef587b-16/s250x400/faa4fb006c83106210ee4698d43059e261a71d86.gifv"
+                            target="_blank"><img src="res/blinkies/awoooo.webp" alt=""></a><br>
+                        <a href="https://rudito.neocities.org/img/ublock.gif" target="_blank">
+                            <img src="res/blinkies/ublock 150.gif" loop alt="install ublock origin">
+                        </a>
+                    </div>
+                </div>
+                <main class="column col-center">
+                    <div class="card">
+                        <h2>Places</h2>
+                        <p>
+                            You can also find me on these websites:
+                        </p>
+                        <ul>
+                            <li><a target="_blank" href="https://artfight.net/~vali_woof">Art Fight</a></li>
+                            <li><a target="_blank" href="https://bsky.app/profile/vali.link">BlueSky</a></li>
+                            <li><a target="_blank" href="https://twitch.tv/vali_woof">Twitch</a> (not actively streaming
+                                though)</li>
+                            <li><span style="text-decoration: line-through;">Twitter</span> well, I'm on there but don't
+                                use it anymore. Fuck Twitter!</li>
+                        </ul>
+                        <p>
+                            If you aren't a robot you can also send some electronic mail my way: webmaster <img
+                                src="/res/dog.gif" onclick="bark();"> vali dot link. (You obviously need to replace that
+                            image with the @ symbol...)
+                        </p>
+                    </div>
+                </main>
+                <aside class="column col-right">
+                    <!-- <iframe class="badges" src="badges.html"></iframe> -->
+
+                    <div class="card badges">
+                        <a target="_blank" href="https://sixey.es/"><img src="res/8831/sixeyes-8831-ridge.gif"
+                                alt="sixeyes badge"></a>
+                        <a target="_blank" href="https://sixey.es/8831/"><img src="res/8831/sixeyes-yeah.png"
+                                alt="yea badge"></a>
+                        <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!"
+                                src="https://melonking.net/images/badges/MELON-BADGE-2.GIF"></a>
+                        <img src="res/8831/NoFuckingThanks.gif" alt="anti-nft badge">
+                        <img src="res/8831/dontfeedtheai.gif" alt="anti-ai badge">
+                        <img src="res/8831/pawmade.gif" alt="made with my own two paws badge">
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <footer>
+            <span id="copyright">&copy; 2024 - Vali</span>
+        </footer>
+    </div>
+    <script>
+        var barks = [
+            new Audio('res/sounds/single-bark-of-a-dog-38780.mp3'),
+            new Audio('res/sounds/barking-3-47779.mp3'),
+            new Audio('res/sounds/dog-bark-179915.mp3'),
+            new Audio('res/sounds/barking-123909.mp3')
+        ];
+
+        var bark = () => {
+            barks[Math.floor(Math.random() * barks.length)].play();
+        };
+    </script>
+    <script src="/js/mouse-trail.js"></script>
+    <script src="/js/common.js"></script>
+</body>
+
+</html>
