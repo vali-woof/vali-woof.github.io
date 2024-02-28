@@ -34,7 +34,7 @@ body {
 }
 
 .theme-1 {
-    background-image: url('/res/pixel-gradient.png');
+    background-image: url('/res/pixel-gradient-fine.png');
     background-repeat: repeat-x;
     --bg: #27346d;
     --bg2: #ff4f4f;
@@ -48,6 +48,45 @@ body {
     background-color: #fff;
     background-blend-mode: multiply;
     --bg: #0064ff;
+}
+
+.theme-3 {
+    background-image: url('/res/wolf.bmp');
+    background-repeat: repeat;
+    --bg: #fff;
+    --bg-content: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-3 {
+        --bg: #000;
+        --bg-content: #000;
+
+        .main, header {
+            border: white ridge 10px;
+        }
+
+        .main {
+            max-height: 80%;
+        }
+    }
+}
+
+.col-left > .card, .badges {
+    border: red dashed 1px;
+    margin-bottom: 40px;
+}
+
+.main, header {
+    border: #FFD94F solid 2px;
+}
+
+.main {
+    border-top: none !important;
+}
+
+header {
+    border-bottom: none !important;
 }
 
 .title {

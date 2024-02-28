@@ -12,7 +12,13 @@ var bark = () => {
 var randomTheme = () => {
     var r = Math.random();
     console.log('Setting random theme: ' + r);
-    if (r > 0.5)
+    if (r < 0.3)
         document.getElementById('theme').className = 'theme-1';
+    else if (r >= 0.3 && r < 0.6)
+        document.getElementById('theme').className = 'theme-2';
+    else
+        document.getElementById('theme').className = 'theme-3';
+
+    document.getElementById('theme').className = 'theme-3';
 };
 randomTheme();
