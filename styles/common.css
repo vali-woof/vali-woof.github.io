@@ -98,6 +98,17 @@ h1 {
     font-size: xxx-large;
 }
 
+.img-wrap-left {
+    img {
+        float: left;
+        margin: 5px;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
 /* Marquee Start */
 
 .marquee {
