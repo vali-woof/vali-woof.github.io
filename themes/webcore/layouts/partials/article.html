@@ -1,0 +1,21 @@
+<article class="h-entry">
+    <a class="u-url" href="{{.Permalink}}">
+        {{ if .Title }}<h3 class="p-name">{{ .Title }}</h3>
+        {{ else }}
+        <h3 class="p-name">{{ .Date.Format "2006-01-02" }}</h3>
+        {{ end }}
+    </a>
+    <div class="e-content">
+        {{ .Content }}
+    </div>
+    <div class="entry-meta">
+        by <a rel="author" class="p-author h-card" href="https://vali.link">Vali</a>
+        <ul class="syndication-links">
+            {{ range .Params.Syndication }}
+            <li><a href="{{ . }}"
+                    class="u-syndication">view on Bluesky</a></li>
+            {{ end }}
+        </ul>
+    </div>
+    <div id="webmentions"></div>
+</article>

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h2>{{.Title}}</h2>
+{{.Content}}
+
+<div class="h-feed">
+  {{ range .Data.Pages }}
+    {{ partial "article.html" . }}
+    {{/*  {{ .Render "article" }}  */}}
+    <hr>
+  {{ end }}
+</div>
+{{ end }}

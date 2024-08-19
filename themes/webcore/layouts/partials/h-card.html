@@ -1,0 +1,51 @@
+{{/* <div class="h-card">
+    <a href="{{ .Site.BaseUrl | sanitizeurl }}" class="p-name u-url">{{ .Site.hcard.name }}</a>
+    (<a href="https://en.wiktionary.org/wiki/he#Pronoun" class="u-pronoun">he</a>/<a
+        href="https://en.wiktionary.org/wiki/they#Pronoun" class="u-pronoun">them</a>)
+    <span class="p-note">{{ .Site.hcard.note }}</span>
+</div> */}}
+
+<div class="h-card">
+    {{ if .Site.Params.IndieWeb.Hcard.Photo }}
+    {{ $img := resources.Get .Site.Params.IndieWeb.Hcard.Photo }}
+    {{ $img := $img.Resize "50x" }}
+    <img class="u-photo" src="{{ $img.RelPermalink }}" />
+    {{ end }}
+    <a class="u-url" href="{{ .Site.BaseURL | sanitizeurl }}">
+        <span class="p-name">{{ .Site.Params.IndieWeb.Hcard.Name }}</span>
+    </a>
+    {{/* <span class="p-honorific-prefix">Dr.</span>
+    <span class="p-given-name">Sally</span>
+    <abbr class="p-additional-name">K.</abbr>
+    <span class="p-family-name">Ride</span>
+    <span class="p-honorific-suffix">Ph.D.</span>,
+    <span class="p-nickname">sallykride</span> (IRC)
+    <div class="p-org">Sally Ride Science</div>
+    <a class="u-email" href="mailto:sally@example.com">e</a>
+    <div class="p-tel">+1.818.555.1212</div>
+    <div class="p-street-address">123 Main st.</div>
+    <span class="p-locality">Los Angeles</span>,
+    <abbr class="p-region" title="California">CA</abbr>,
+    <span class="p-postal-code">91316</span>
+    <div class="p-country-name">U.S.A</div>
+    <time class="dt-bday">1951-05-26</time> birthday
+    <div class="p-category">physicist</div> */}}
+    {{ if .Site.Params.IndieWeb.Hcard.Note }}
+    <div class="p-note">{{ .Site.Params.IndieWeb.Hcard.Note }}</div>
+    {{ end }}
+    <ul>
+        {{ range .Site.Params.IndieWeb.Urls }}
+        <li>
+            <a href="{{ . }}" class="u-url">{{ . }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+{{ define "style" }}
+.u-photo {
+float: left;
+margin-right: 20px;
+border-radius: 20px;
+}
+{{ end }}
