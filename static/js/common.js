@@ -18,7 +18,5 @@ var randomTheme = () => {
         document.getElementById('theme').className = 'theme-2';
     else
         document.getElementById('theme').className = 'theme-3';
-
-    document.getElementById('theme').className = 'theme-3';
 };
-randomTheme();
+// randomTheme();
