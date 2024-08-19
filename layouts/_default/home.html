@@ -1,0 +1,128 @@
+{{ define "main" }}
+{{/*  {{ partial "h-card.html" . }}  */}}
+
+<div class="h-card img-wrap-left">
+    <h2 aria-label="waving emoji">( ^_^)／</h2>
+    {{ if .Site.Params.IndieWeb.Hcard.Photo }}
+    {{ $img := resources.Get .Site.Params.IndieWeb.Hcard.Photo }}
+    {{ $img := $img.Resize "100x" }}
+    <img class="u-photo" src="{{ $img.RelPermalink }}" alt="Sona Portrait"/>
+    {{ end }}
+    <p>
+        Welcome to my website!
+    </p>
+    <p>
+        My name is <strong class="p-name">Vali</strong> (<a href="https://en.wiktionary.org/wiki/he#Pronoun"
+            class="u-pronoun">he</a>/<a href="https://en.wiktionary.org/wiki/they#Pronoun" class="u-pronoun">them</a>)
+        and <span class="p-note">I'm a software engineer and artist on the internet.</span> You can find
+        some of my stuff in the gallery. There's also more art on my <a rel="me" class="u-url"
+            href="https://bsky.app/profile/vali.link">Bluesky</a> (which contains 18+
+        stuff...).<a rel="me" class="u-url" href="https://vali.link"></a>
+    </p>
+</div>
+<p>
+    <span style="color: red; font-size: x-large; line-height: 100%; text-align: center;"><img
+            src="/res/icons/sign-32.png" alt="under construction sign">This
+        site is still under construction!<img src="/res/icons/sign-32.png" alt="under construction sign">
+    </span><br>
+    I'm still messing around with stuff, so this site might change drastically...
+</p>
+<blockquote cite="https://www.tiktok.com/@epic.cammy1933/video/7328854612755090734">
+    What's up, cocksuckers? It's a full moon. And you know what that means? It means that the
+    moon is full.
+    <footer>
+        — epic.cammy1993, <cite>TikTok</cite>
+    </footer>
+</blockquote>
+<h2 id="why"><img src="/res/dog.gif" alt="barking dog" class="flip-vert" onclick="bark();">But
+    why?</h2>
+<p>I saw <a href="https://www.tiktok.com/@trytogoback/video/7318557299579096366" target="_blank">this video of a guy
+        talking about "the old web aesthetics"</a> and
+    thought to myself: "Oh this is cool. This looks like a fun project to forget the concept
+    of
+    time to." <i>*nervously looks at the clock saying 3am*</i> After doing some research, I
+    stumbled across <a href="https://melonking.net/">melon's website</a>, which just
+    solidified
+    my idea...</p>
+<h2 id="8831"><img src="/res/dog.gif" alt="barking dog" class="flip-vert" onclick="bark();">Banners</h2>
+<p>You can put these on your homepage and stuff.</p>
+<p>
+    <a href="https://vali.link/"><img src="https://vali.link/res/8831/vali_8831_1.png" alt="Vali's Homepage"></a>
+    <textarea><a href="https://vali.link/"><img src="https://vali.link/res/8831/vali_8831_1.png" alt="Vali's Homepage"></a></textarea>
+</p>
+<p>
+    <a href="https://vali.link/"><img src="https://vali.link/res/8831/vali_8831_2.png" alt="Vali's Homepage"></a>
+    <textarea><a href="https://vali.link/"><img src="https://vali.link/res/8831/vali_8831_2.png" alt="Vali's Homepage"></a></textarea>
+</p>
+<p>
+    <a href="https://vali.link/"><img src="https://vali.link/res/8831/vali_8831_1.gif" alt="Vali's Homepage"></a>
+    <textarea><a href="https://vali.link/"><img src="https://vali.link/res/8831/vali_8831_1.gif" alt="Vali's Homepage"></a></textarea>
+</p>
+<div id="changelog" class="card">
+    <h2><img src="/res/dog.gif" alt="barking dog" class="flip-vert" onclick="bark();">Changelog</h2>
+    <article>
+        <h3>22.07.2024</h3>
+        <ul>
+            <li>Add rel-me links</li>
+            <li>Add h-card</li>
+        </ul>
+        <p>I just found out about <a href="https://indieweb.org/" target="_blank" rel="noopener noreferrer">IndieWeb</a>
+            and now I want to implement all the things.</p>
+    </article>
+    <article>
+        <h3>18.05.2024</h3>
+        <ul>
+            <li>Update CSS</li>
+            <li>Fix some links</li>
+            <li>Add more badges</li>
+        </ul>
+    </article>
+    <article>
+        <h3>28.02.2024</h3>
+        <ul>
+            <li>Add more badges</li>
+            <li>Update theme, again...</li>
+            <li>Move places page to <a href="/about.html">About</a></li>
+        </ul>
+    </article>
+    <article>
+        <h3>26.02.2024</h3>
+        <ul>
+            <li>Added alternative theme</li>
+            <li>Added status</li>
+            <li>Update <a href="#">Places</a></li>
+            <li>Add counter</li>
+        </ul>
+    </article>
+    <article>
+        <h3>05.02.2024</h3>
+        <ul>
+            <li>Added a dark theme</li>
+            <li>Added 88x31 banners</li>
+            <li>Added <a href="#">Places</a></li>
+            <li>Added pictures from Art Fight 2023 to the <a href="/gallery.html">gallery</a></li>
+            <li>Updated gallery styling</li>
+        </ul>
+    </article>
+    <article>
+        <h3>04.02.2024</h3>
+        <ul>
+            <li>Update homepage style</li>
+            <li>Add changelog</li>
+            <li>Add fun stuff</li>
+        </ul>
+    </article>
+    <article>
+        <h3>03.02.2024</h3>
+        <ul>
+            <li>Initial Version: This is still very much a work in progress.</li>
+        </ul>
+    </article>
+</div>
+<div class="card center">
+    <img src="/res/counter.png" alt="counter" referrerpolicy="no-referrer">
+    <!-- <img src="https://counter.websiteout.com/example.php?C=2&D=2&N=69" alt="counter" referrerpolicy="no-referrer"> -->
+</div>
+{{ .Content }}
+
+{{ end }}

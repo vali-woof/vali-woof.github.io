@@ -30,9 +30,14 @@ header {
     background-color: var(--bg-content);
 }
 
+main {
+    margin: 20px;
+}
+
 .column {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
     /* height: 100%; */
 }
 
