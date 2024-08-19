@@ -1,3 +1,4 @@
 static/res/gallery/nightshade
 .hugo_build.lock
 public/
+resources/_gen
