@@ -1,8 +1,10 @@
 ---
 date: 2024-07-04
 categories: [ "artfight", "artfight2024", "furryart" ]
-syndication:
-    - https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kwig2adszs2c
+syndication: [
+    { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kwig2adszs2c", hidden: true },
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kwig2adszs2c" }
+]
 ---
 Another #artfight attack for [@wolfsbark.bsky.social](https://bsky.app/profile/did:plc:nsns4cvjw73qhgypcgqg5v7n)
 

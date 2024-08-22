@@ -12,8 +12,9 @@
         by <a rel="author" class="p-author h-card" href="https://vali.link">Vali</a>
         <ul class="syndication-links">
             {{ range .Params.Syndication }}
-            <li><a href="{{ . }}"
-                    class="u-syndication">view on Bluesky</a></li>
+                <li {{ if .hidden }} style="display: none;" {{ end }}><a href="{{ .url }}"
+                        class="u-syndication">view on {{ .platform }}</a></li>
+                
             {{ end }}
         </ul>
     </div>
