@@ -17,6 +17,9 @@
     {{ if .Site.Params.IndieWeb.Webmention }}
         <link rel="webmention" href="{{ .Site.Params.IndieWeb.Webmention }}" />
     {{ end }}
+    {{ if .Site.Params.IndieWeb.FeedLocation }}
+        <link rel="feed" href="{{ .Site.Params.IndieWeb.FeedLocation | absURL }}">
+    {{ end }}
     <style>
         .entry-meta {
             {{/*  display: none;  */}}
