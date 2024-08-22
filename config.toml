@@ -9,4 +9,4 @@ theme = "webcore"
     [params.IndieWeb.Hcard]
         name = "Vali"
         note = "I'm a software engineer and artist on the internet."
-        photo = "artfight 2022_headshot by Tischotter 100px.png"
+        photo = "/img/artfight 2022_headshot by Tischotter 100px.png"

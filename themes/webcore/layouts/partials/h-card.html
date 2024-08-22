@@ -9,7 +9,7 @@
     {{ if .Site.Params.IndieWeb.Hcard.Photo }}
     {{ $img := resources.Get .Site.Params.IndieWeb.Hcard.Photo }}
     {{ $img := $img.Resize "50x" }}
-    <img class="u-photo" src="{{ $img.RelPermalink }}" />
+    <img class="u-photo" src="{{ $img.Permalink }}" />
     {{ end }}
     <a class="u-url" href="{{ .Site.BaseURL }}">
         <span class="p-name">{{ .Site.Params.IndieWeb.Hcard.Name }}</span>

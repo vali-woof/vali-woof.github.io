@@ -6,7 +6,7 @@
     {{ if .Site.Params.IndieWeb.Hcard.Photo }}
     {{ $img := resources.Get .Site.Params.IndieWeb.Hcard.Photo }}
     {{ $img := $img.Resize "100x" }}
-    <img class="u-photo" src="{{ $img.RelPermalink }}" alt="Sona Portrait"/>
+    <img class="u-photo" src="{{ $img.Permalink }}" alt="Sona Portrait"/>
     {{ end }}
     <p>
         Welcome to my website!
