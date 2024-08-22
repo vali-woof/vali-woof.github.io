@@ -11,7 +11,7 @@
     {{ $img := $img.Resize "50x" }}
     <img class="u-photo" src="{{ $img.RelPermalink }}" />
     {{ end }}
-    <a class="u-url" href="{{ .Site.BaseURL | sanitizeurl }}">
+    <a class="u-url" href="{{ .Site.BaseURL }}">
         <span class="p-name">{{ .Site.Params.IndieWeb.Hcard.Name }}</span>
     </a>
     {{/* <span class="p-honorific-prefix">Dr.</span>
