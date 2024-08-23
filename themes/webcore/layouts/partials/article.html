@@ -1,3 +1,7 @@
+{{ define "head" }}
+<script src="/js/webmention.js" data-page-url="https://vali.link/posts/" data-max-webmentions="99" async></script>
+<link rel="stylesheet" href="/styles/webmention.css">
+{{ end }}
 <article class="h-entry">
     <a class="u-url" href="{{.Permalink}}">
         {{ if .Title }}<h3 class="p-name">{{ .Title }}</h3>

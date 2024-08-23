@@ -20,6 +20,9 @@
     {{ if .Site.Params.IndieWeb.FeedLocation }}
         <link rel="feed" href="{{ .Site.Params.IndieWeb.FeedLocation | absURL }}">
     {{ end }}
+    {{ block "head" . }}
+    
+    {{ end }}
     <style>
         .entry-meta {
             {{/*  display: none;  */}}
@@ -43,7 +46,6 @@
         
         {{ end }}
     </style>
-    <script src="/js/webmention.js" async></script>
 </head>
 
 <body id="theme" class="theme-3">
