@@ -4,7 +4,8 @@ categories:
     - art
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k55eafq5pf2g", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k55eafq5pf2g" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k55eafq5pf2g" },
+    { platform: "Mastodon", url: "https://bark.lgbt/@vali/113012481397768047" }
 ]
 ---
 🐶🐶🐶
