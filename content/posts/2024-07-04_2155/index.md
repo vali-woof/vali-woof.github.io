@@ -6,7 +6,7 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kwig2adszs2c" }
 ]
 ---
-Another #<a href="/categories/artfight" class="p-category">artfight</a> attack for [@wolfsbark.bsky.social](https://bsky.app/profile/did:plc:nsns4cvjw73qhgypcgqg5v7n)
+Another #<a href="/categories/artfight" class="p-category">artfight</a> attack for <a class="u-category h-card" href="https://bsky.app/profile/did:plc:nsns4cvjw73qhgypcgqg5v7n">@wolfsbark.bsky.social</a>
 
 
 #<a href="/categories/artfight2024" class="p-category">artfight2024</a> #<a href="/categories/furryart" class="p-category">furryart</a>
