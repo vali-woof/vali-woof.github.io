@@ -2,7 +2,7 @@
     <a class="u-url" href="{{.Permalink}}">
         {{ if .Title }}<h2 class="p-name">{{ .Title }}</h2>
         {{ else }}
-        <h2 class="p-name">{{ .Date.Format "2006-01-02" }}</h2>
+        <h2>{{ .Date.Format "2006-01-02" }}</h2>
         {{ end }}
     </a>
     <div class="e-content">
