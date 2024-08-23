@@ -1,0 +1,28 @@
+{
+  "subject": "acct:vali@bark.lgbt",
+  "aliases": [
+    "https://bark.lgbt/@vali",
+    "https://bark.lgbt/users/vali"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://bark.lgbt/@vali"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://bark.lgbt/users/vali"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://bark.lgbt/authorize_interaction?uri={uri}"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "type": "image/png",
+      "href": "https://media.bark.lgbt/accounts/avatars/113/011/888/128/613/289/original/17c08f57ed883a8b.png"
+    }
+  ]
+}
