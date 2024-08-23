@@ -314,7 +314,7 @@ A more detailed example:
    * @returns string
    */
   function formatComments(comments) {
-    const headline = `<h2>${t('Responses')}</h2>`;
+    const headline = `<h4>${t('Responses')}</h4>`;
     const markup = comments
       .map((c) => {
         const image = reactImage(c, true);
@@ -366,9 +366,9 @@ A more detailed example:
    * @returns string
    */
   function formatReactions(reacts) {
-    const headline = `<h2>${t('Reactions')}</h2>`;
+    const headline = `<h4>${t('Reactions')}</h4>`;
 
-    const markup = reacts.map((r) => reactImage(r)).join('');
+    const markup = '<li>' + reacts.map((r) => reactImage(r)).join('</li><li>');
 
     return `
       ${headline}
