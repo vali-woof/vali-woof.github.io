@@ -1,5 +1,4 @@
 ---
-title: The Countotter
 date: 2023-07-04T19:18:00
 categories:
     - furryart
