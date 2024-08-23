@@ -1,5 +1,5 @@
 ---
-date: 2023-07-07
+date: 2023-07-07T19:05:00
 categories:
     - furryart
     - artfight
