@@ -16,4 +16,4 @@ Attack on [@tischotter.com](https://bsky.app/profile/did:plc:efwaw7okgtg7nfetg45
 
 #<a href="/categories/furryart" class="p-category">furryart</a>
 
-![A digital painting of Tischotter as The Count](/posts/2023-07-04_1918/Tisch.jpg)
+<img class="u-featured" src="/posts/2023-07-04_1918/Tisch.jpg" alt="A digital painting of Tischotter as The Count" />

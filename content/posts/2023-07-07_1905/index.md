@@ -19,4 +19,4 @@ Watch out, felines.
 
 #<a href="/categories/furryart" class="p-category">furryart</a>
 
-![A painting of Werelycanthrope's fursona opening his maw, ready to eat a sandwich. A cat's head is peeking out of the front of the sandwich.](/posts/2023-07-07_1905/WereLycanthrope.jpg)
+<img class="u-featured" src="/posts/2023-07-07_1905/WereLycanthrope.jpg" alt="A painting of Werelycanthrope's fursona opening his maw, ready to eat a sandwich. A cat's head is peeking out of the front of the sandwich." />
