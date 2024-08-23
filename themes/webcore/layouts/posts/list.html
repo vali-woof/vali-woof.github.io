@@ -7,8 +7,10 @@
 <h2>{{.Title}}</h2>
 {{.Content}}
 
+<div class="h-feed">
   {{ range .Data.Pages }}
-    {{ partial "single.html" . }}
+    {{ partial "article.html" . }}
     <hr>
   {{ end }}
+</div>
 {{ end }}
