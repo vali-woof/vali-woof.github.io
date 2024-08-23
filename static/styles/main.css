@@ -162,3 +162,24 @@ ul>li>.done {
     min-width: inherit;
     margin: 2px !important;
 }
+
+/* Breadcrumb */
+
+.breadcrumb li {
+    display: inline;
+    list-style: none;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    content: "/\00a0";
+}

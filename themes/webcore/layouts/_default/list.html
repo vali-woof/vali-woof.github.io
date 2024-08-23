@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="/styles/webmention.css">
 {{ end }}
 {{ define "main" }}
+{{ partial "breadcrumb.html" . }}
 <h2>{{.Title}}</h2>
 {{.Content}}
 

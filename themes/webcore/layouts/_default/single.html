@@ -3,6 +3,7 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
+{{ partial "breadcrumb.html" . }}
   <h2>{{ .Title }}</h2>
   {{ partial "article.html" . }}
   {{/*  {{ .Content }}  */}}
