@@ -9,7 +9,15 @@
         {{ .Content }}
     </div>
     <div class="entry-meta">
-        by <a rel="author" class="p-author h-card" href="https://vali.link">Vali</a>
+        <span>
+            posted&nbsp;<time class="dt-published" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "Jan 02, 2006 15:04" }}</time>
+            {{ if .Site.Params.IndieWeb.Hcard.Photo }}
+            {{ $img := resources.Get .Site.Params.IndieWeb.Hcard.Photo }}
+            {{ $img := $img.Resize "25x" }}
+            &nbsp;by&nbsp;<img class="u-photo" src="{{ $img.Permalink }}" alt="Sona Portrait"/>
+            {{ end }}
+             <a rel="author" class="p-author h-card" href="https://vali.link">Vali</a>
+        </span>
         <ul class="syndication-links">
             {{ range .Params.Syndication }}
                 <li {{ if .hidden }} style="display: none;" {{ end }}><a href="{{ .url }}"

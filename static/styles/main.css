@@ -183,3 +183,25 @@ ul>li>.done {
     padding: 8px;
     content: "/\00a0";
 }
+
+/* Microblog */
+
+.dt-published {
+    font-style: italic;
+}
+
+.entry-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.entry-meta .u-photo {
+    margin-right: 4px;
+    border-radius: 4px;
+}
+
+.h-card .u-photo {
+    float: left;
+    margin-right: 20px;
+    border-radius: 20px;
+}
