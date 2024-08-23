@@ -5,12 +5,14 @@ theme = "webcore"
 
 [params.IndieWeb]
     urls = [ "https://bsky.app/profile/vali.link", "https://twitch.tv/vali_woof", "https://artfight.net/~vali_woof", "https://github.com/vali-woof" ]
-    webmention = "https://webmention.io/vali.link/webmention"
     feedLocation = "/posts"
     [params.IndieWeb.Hcard]
         name = "Vali"
         note = "I'm a software engineer and artist on the internet."
         photo = "/img/artfight 2022_headshot by Tischotter 100px.png"
+    [params.IndieWeb.Webmentions]
+        url = "https://webmention.io/vali.link/webmention"
+        maxWebmentions = "99"
 
 [markup.goldmark.renderer]
     unsafe = true

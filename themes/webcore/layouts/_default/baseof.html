@@ -14,11 +14,11 @@
     {{ range .Site.Params.IndieWeb.Urls }}
         <link rel="me" href="{{ . }}">
     {{ end }}
-    {{ if .Site.Params.IndieWeb.Webmention }}
-        <link rel="webmention" href="{{ .Site.Params.IndieWeb.Webmention }}" />
+    {{ with .Site.Params.IndieWeb.Webmentions.Url }}
+        <link rel="webmention" href="{{ . }}" />
     {{ end }}
-    {{ if .Site.Params.IndieWeb.FeedLocation }}
-        <link rel="feed" href="{{ .Site.Params.IndieWeb.FeedLocation | absURL }}">
+    {{ with .Site.Params.IndieWeb.FeedLocation }}
+        <link rel="feed" href="{{ . | absURL }}">
     {{ end }}
     {{ block "head" . }}
     

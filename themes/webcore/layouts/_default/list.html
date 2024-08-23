@@ -1,14 +1,10 @@
-{{ define "head" }}
-<script src="/js/webmention.js" data-page-url="https://vali.link/posts/2024-07-04_2155/" async></script>
-<link rel="stylesheet" href="/styles/webmention.css">
-{{ end }}
 {{ define "main" }}
 {{ partial "breadcrumb.html" . }}
 <h2>{{.Title}}</h2>
 {{.Content}}
 
   {{ range .Data.Pages }}
-    {{ partial "single.html" . }}
-    <hr>
+    <a href="{{ .Permalink }}"><h3>{{ .Date.Format "2006-01-02" }}</h3></a>
+    {{ .Content }}
   {{ end }}
 {{ end }}
