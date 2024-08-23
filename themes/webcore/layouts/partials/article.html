@@ -14,7 +14,7 @@
             {{ if .Site.Params.IndieWeb.Hcard.Photo }}
             {{ $img := resources.Get .Site.Params.IndieWeb.Hcard.Photo }}
             {{ $img := $img.Resize "25x" }}
-            &nbsp;by&nbsp;<img class="u-photo" src="{{ $img.Permalink }}" alt="Sona Portrait"/>
+            &nbsp;by&nbsp;<img src="{{ $img.Permalink }}" alt="Sona Portrait"/>
             {{ end }}
              <a rel="author" class="p-author h-card" href="https://vali.link">Vali</a>
         </span>
