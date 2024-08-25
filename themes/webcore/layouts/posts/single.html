@@ -3,7 +3,9 @@
 {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "head" }}
-<script src="/js/webmention.js" data-max-webmentions="{{ .Site.Params.IndieWeb.Webmentions.MaxWebmentions }}" async></script>
+{{ with .Site.Params.IndieWeb.Webmentions.MaxWebmentions }}
+<script src="/js/webmention.js" data-max-webmentions="{{ . }}" async></script>
+{{ end }}
 <link rel="stylesheet" href="/styles/webmention.css">
 {{ end }}
 

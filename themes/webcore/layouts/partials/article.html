@@ -1,10 +1,12 @@
 <article class="h-entry">
+    <div class="header">
     <a class="u-url" href="{{.Permalink}}">
         {{ if .Title }}<h2 class="p-name">{{ .Title }}</h2>
         {{ else }}
         <h2>{{ .Date.Format "2006-01-02" }}</h2>
         {{ end }}
     </a>
+    </div>
     <div class="e-content">
         {{ .Content }}
     </div>
@@ -14,17 +16,22 @@
             {{ if .Site.Params.IndieWeb.Hcard.Photo }}
             {{ $img := resources.Get .Site.Params.IndieWeb.Hcard.Photo }}
             {{ $img := $img.Resize "25x" }}
-            &nbsp;by&nbsp;<img src="{{ $img.Permalink }}" alt="Sona Portrait"/>
+            &nbsp;by&nbsp;<img src="{{ $img.Permalink }}" alt="Sona Portrait" />&nbsp;
             {{ end }}
-             <a rel="author" class="p-author h-card" href="https://vali.link">Vali</a>
+            <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">Vali</a>
         </span>
         <ul class="syndication-links">
             {{ range .Params.Syndication }}
-                <li {{ if .hidden }} style="display: none;" {{ end }}><a href="{{ .url }}"
-                        class="u-syndication">view on {{ .platform }}</a></li>
-                
+            <li {{ if .hidden }} style="display: none;" {{ end }}>
+                <a href="{{ .url }}" class="u-syndication">{{ partial "icon.html" (dict "name" .platform "width" "12pt" "height" "12pt") }}</a>
+            </li>
             {{ end }}
         </ul>
+        {{ range .Params.Publish }}
+        <a href="https://brid.gy/publish/{{ . }}" style="display: none;"></a>
+        {{ end }}
     </div>
+    {{ if .Site.Params.IndieWeb.Webmentions.url }}
     <div id="webmentions"></div>
+    {{ end }}
 </article>

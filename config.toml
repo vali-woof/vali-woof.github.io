@@ -1,6 +1,6 @@
 baseURL = "https://vali.link/"
 languageCode = "en-us"
-title = "Vali's  Homepage"
+title = "Vali's Homepage"
 theme = "webcore"
 
 [params.IndieWeb]

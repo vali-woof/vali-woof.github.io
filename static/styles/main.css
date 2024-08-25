@@ -165,9 +165,18 @@ ul>li>.done {
 
 /* Breadcrumb */
 
-.breadcrumb li {
+.breadcrumb li, .syndication-links li {
     display: inline;
     list-style: none;
+}
+
+.syndication-links {
+    text-align: right;
+    flex: 1 1 auto;
+}
+
+.syndication-links li {
+    padding-left: 10px;
 }
 
 .breadcrumb li a {
@@ -187,6 +196,14 @@ ul>li>.done {
 
 .dt-published {
     font-style: italic;
+}
+
+.entry-meta {
+    display: flex;
+}
+
+.entry-meta, .entry-meta a {
+    color: #717171;
 }
 
 .entry-meta span {
