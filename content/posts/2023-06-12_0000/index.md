@@ -1,5 +1,5 @@
 ---
-date: 2024-06-12T00:00:00+02:00
+date: 2023-06-12T00:00:00+02:00
 categories:
     - art
 syndication: [
@@ -9,6 +9,6 @@ syndication: [
 ---
 Hay there
 
-#<a href="/categories/art" class="p-category">art</a>
+{{< category "art" >}}
 
 <img class="u-featured" src="/posts/2023-06-12_0000/hay-bale.jpg" alt="A picture of a hay bale in a field. Done with water color, markers, colored pencils" >

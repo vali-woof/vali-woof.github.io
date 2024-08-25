@@ -9,6 +9,6 @@ syndication: [
 ---
 🐶
 
-#<a href="/categories/art" class="p-category">art</a>
+{{< category "art" >}}
 
 <img class="u-featured" src="/posts/2022-02-26_0000/akita.jpg" alt="A charcoal drawing of an Akita dog" >

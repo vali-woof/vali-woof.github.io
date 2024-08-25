@@ -10,6 +10,6 @@ syndication: [
 ---
 🦌
 
-#<a href="/categories/art" class="p-category">art</a> #<a href="/categories/furryart" class="p-category">furryart</a>
+{{< category "art" "furryart" >}}
 
 <img class="u-featured" src="/posts/2021-10-15_0000/deerguy.jpg" alt="A picture of an anthropomorphic deer wearing a jacket and suit, done with graphite">

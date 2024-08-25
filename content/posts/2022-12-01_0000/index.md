@@ -8,6 +8,6 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kaae3zedsu27" }
 ]
 ---
-#<a href="/categories/art" class="p-category">art</a>
+{{< category "art" >}}
 
 <img class="u-featured" src="/posts/2022-12-01_0000/frenchie faces.jpg" alt="Ink drawings of 2 frenchie heads" loading="lazy">

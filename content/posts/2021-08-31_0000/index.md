@@ -10,6 +10,6 @@ syndication: [
 ---
 Sona doodle
 
-#<a href="/categories/art" class="p-category">art</a> #<a href="/categories/furryart" class="p-category">furryart</a>
+{{< category "art" "furryart" >}}
 
 <img class="u-featured" src="/posts/2021-08-31_0000/leggy.jpg" />

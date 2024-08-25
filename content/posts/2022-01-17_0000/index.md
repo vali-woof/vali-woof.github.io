@@ -10,6 +10,6 @@ syndication: [
 ---
 🏞️
 
-#<a href="/categories/art" class="p-category">art</a> #<a href="/categories/digitalart" class="p-category">digitalart</a>
+{{< category "art" "digitalart" >}}
 
 <img class="u-featured" src="/posts/2022-01-17_0000/mountain-lake.jpg" alt="Digital painting depicting mountains in the background, a lake in the midground and some trees in the foreground" >

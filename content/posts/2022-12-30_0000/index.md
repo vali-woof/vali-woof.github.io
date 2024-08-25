@@ -8,6 +8,6 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k5xaqsxgls2x" }
 ]
 ---
-#<a href="/categories/art" class="p-category">art</a> #<a href="/categories/traditionalart" class="p-category">traditionalart</a>
+{{< category "art" "traditionalart" >}}
 
 <img class="u-featured" src="/posts/2022-12-30_0000/roses.jpeg" alt="A watercolor painting of three pink roses">

@@ -1,0 +1,5 @@
+{{ if .IsNamedParams }}
+    <a class="u-category h-card" href="{{ .Get "url" }}">{{ .Get "name" }}</a>
+{{ else }}
+    <a class="u-category h-card" href="{{ .Get 1 }}">{{ .Get 0 }}</a>
+{{ end }}

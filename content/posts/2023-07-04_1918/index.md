@@ -11,8 +11,8 @@ syndication: [
 ---
 🧛‍♂️ The Countotter<br>
 ⚔️ Art Fight 2023<br>
-Attack on [@tischotter.com](https://bsky.app/profile/did:plc:efwaw7okgtg7nfetg45kjhtg)
+Attack on {{< mention "@tischotter.com" "https://bsky.app/profile/did:plc:efwaw7okgtg7nfetg45kjhtg">}}
 
-#<a href="/categories/furryart" class="p-category">furryart</a>
+{{< category "furryart" >}}
 
 <img class="u-featured" src="/posts/2023-07-04_1918/Tisch.jpg" alt="A digital painting of Tischotter as The Count" />

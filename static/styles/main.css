@@ -178,7 +178,6 @@ ul>li>.done {
     text-decoration: underline;
 }
 
-
 .breadcrumb li+li:before {
     padding: 8px;
     content: "/\00a0";
@@ -204,4 +203,8 @@ ul>li>.done {
     float: left;
     margin-right: 20px;
     border-radius: 20px;
+}
+
+.u-featured {
+    margin-top:20px
 }

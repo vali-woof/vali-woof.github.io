@@ -13,10 +13,10 @@ syndication: [
 
 Watch out, felines. 
 
-[@werelycanthrope.bsky.social](https://bsky.app/profile/did:plc:2fysggmrge4qwtemxbfce5xh) is on the loose.
+{{< mention "@werelycanthrope.bsky.social" "https://bsky.app/profile/did:plc:2fysggmrge4qwtemxbfce5xh" >}} is on the loose.
 
 ⚔️ Art Fight 2023
 
-#<a href="/categories/furryart" class="p-category">furryart</a>
+{{< category "furryart" >}}
 
 <img class="u-featured" src="/posts/2023-07-07_1905/WereLycanthrope.jpg" alt="A painting of Werelycanthrope's fursona opening his maw, ready to eat a sandwich. A cat's head is peeking out of the front of the sandwich." />
