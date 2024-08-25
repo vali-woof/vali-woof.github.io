@@ -10,4 +10,4 @@ syndication: [
 ---
 #<a href="/categories/art" class="p-category">art</a> #<a href="/categories/traditionalart" class="p-category">traditionalart</a>
 
-<img src="/posts/2022-12-30_0000/roses.jpeg" alt="A watercolor painting of three pink roses">
+<img class="u-featured" src="/posts/2022-12-30_0000/roses.jpeg" alt="A watercolor painting of three pink roses">

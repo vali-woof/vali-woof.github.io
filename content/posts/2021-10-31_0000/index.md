@@ -10,4 +10,4 @@ syndication: [
 ---
 #<a href="/categories/art" class="p-category">art</a> #<a href="/categories/traditionalart" class="p-category">traditionalart</a>
 
-<img src="/posts/2021-10-31_0000/raven.jpg" alt="A graphite drawing of a raven head in profile" >
+<img class="u-featured" src="/posts/2021-10-31_0000/raven.jpg" alt="A graphite drawing of a raven head in profile" >

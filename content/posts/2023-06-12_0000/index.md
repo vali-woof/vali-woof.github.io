@@ -11,4 +11,4 @@ Hay there
 
 #<a href="/categories/art" class="p-category">art</a>
 
-<img src="/posts/2023-06-12_0000/hay-bale.jpg" alt="A picture of a hay bale in a field. Done with water color, markers, colored pencils" >
+<img class="u-featured" src="/posts/2023-06-12_0000/hay-bale.jpg" alt="A picture of a hay bale in a field. Done with water color, markers, colored pencils" >
