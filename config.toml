@@ -9,6 +9,7 @@ theme = "webcore"
     feedLocation = "/posts"
     [params.IndieWeb.Hcard]
         name = "Vali"
+        pronouns = [ { value = "he", href = "https://en.wiktionary.org/wiki/he#Pronoun" }, { value = "they", href = "https://en.wiktionary.org/wiki/they#Pronoun" } ]
         note = "I'm a software engineer and artist on the internet."
         photo = "/img/artfight 2022_headshot by Tischotter 100px.png"
     [params.IndieWeb.Webmentions]

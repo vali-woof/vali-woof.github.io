@@ -6,14 +6,28 @@
 </div> */}}
 
 <div class="h-card">
-    {{ if .Site.Params.IndieWeb.Hcard.Photo }}
-    {{ $img := resources.Get .Site.Params.IndieWeb.Hcard.Photo }}
+    {{ with .Site.Params.IndieWeb.Hcard.Photo }}
+    {{ $img := resources.Get . }}
     {{ $img := $img.Resize "50x" }}
     <img class="u-photo" src="{{ $img.Permalink }}" />
     {{ end }}
     <a class="u-url" href="{{ .Site.BaseURL }}">
-        <span class="p-name">{{ .Site.Params.IndieWeb.Hcard.Name }}</span>
+        {{ with .Site.Params.IndieWeb.Hcard.Name }}
+            <span class="p-name">{{ . }}</span>
+        {{ else }}
+            {{ .Site.Title }}
+        {{ end }}
     </a>
+    {{ with .Site.Params.IndieWeb.Hcard.Pronouns }}
+    (
+    {{ range $k, $v := . }}
+    <a href="{{ .href }}" class="u-pronoun">{{ .value }}</a>
+    {{ if eq $k 0 }}
+        /
+    {{ end }}
+    {{ end }}
+    )
+    {{ end }}
     {{/* <span class="p-honorific-prefix">Dr.</span>
     <span class="p-given-name">Sally</span>
     <abbr class="p-additional-name">K.</abbr>
@@ -30,14 +44,16 @@
     <div class="p-country-name">U.S.A</div>
     <time class="dt-bday">1951-05-26</time> birthday
     <div class="p-category">physicist</div> */}}
-    {{ if .Site.Params.IndieWeb.Hcard.Note }}
-    <div class="p-note">{{ .Site.Params.IndieWeb.Hcard.Note }}</div>
+    {{ with .Site.Params.IndieWeb.Hcard.Note }}
+    <div class="p-note">{{ . }}</div>
     {{ end }}
-    <ul>
-        {{ range .Site.Params.IndieWeb.Urls }}
-        <li>
-            <a href="{{ . }}" class="u-url">{{ . }}</a>
-        </li>
-        {{ end }}
-    </ul>
+    {{ with .Site.Params.IndieWeb.Urls }}
+        <ul>
+            {{ range . }}
+            <li>
+                <a href="{{ . }}" class="u-url">{{ . }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    {{ end }}
 </div>
