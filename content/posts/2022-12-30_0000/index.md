@@ -7,7 +7,9 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k5xaqsxgls2x", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k5xaqsxgls2x" }
 ]
+resources:
+    - src: "roses.jpeg"
+      params:
+        alt: "A watercolor painting of three pink roses"
 ---
 {{< category "art" "traditionalart" >}}
-
-<img class="u-featured" src="/posts/2022-12-30_0000/roses.jpeg" alt="A watercolor painting of three pink roses">

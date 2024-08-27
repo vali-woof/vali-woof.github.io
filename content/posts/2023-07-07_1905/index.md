@@ -8,6 +8,10 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k7wob4lobu25", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k7wob4lobu25" }
 ]
+resources:
+    - src: "WereLycanthrope.jpg"
+      params:
+        alt: "A painting of Werelycanthrope's fursona opening his maw, ready to eat a sandwich. A cat's head is peeking out of the front of the sandwich."
 ---
 🥪 Nomnomnom
 
@@ -18,5 +22,3 @@ Watch out, felines.
 ⚔️ Art Fight 2023
 
 {{< category "furryart" >}}
-
-<img class="u-featured" src="/posts/2023-07-07_1905/WereLycanthrope.jpg" alt="A painting of Werelycanthrope's fursona opening his maw, ready to eat a sandwich. A cat's head is peeking out of the front of the sandwich." />

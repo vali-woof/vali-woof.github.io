@@ -7,7 +7,9 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kaae3zedsu27", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kaae3zedsu27" }
 ]
+resources:
+    - src: "frenchie faces.jpg"
+      params:
+        alt: "Ink drawings of 2 frenchie heads"
 ---
 {{< category "art" >}}
-
-<img class="u-featured" src="/posts/2022-12-01_0000/frenchie faces.jpg" alt="Ink drawings of 2 frenchie heads" loading="lazy">

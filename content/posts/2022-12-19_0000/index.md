@@ -1,8 +1,11 @@
 ---
 date: 2022-12-19T00:00:00+02:00
 categories:
-    - 
+    - art
+    - traditionalart
 syndication: [ ]
+resources:
+    - src: "road.jpeg"
+      params:
+        alt: "A drawing of a road on a hilly landscape"
 ---
-
-<img class="u-featured" src="/posts/2022-12-19_0000/road.jpeg" alt="A drawing of a road on a hilly landscape">

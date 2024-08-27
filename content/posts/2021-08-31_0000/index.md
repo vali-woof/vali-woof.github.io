@@ -11,5 +11,3 @@ syndication: [
 Sona doodle
 
 {{< category "art" "furryart" >}}
-
-<img class="u-featured" src="/posts/2021-08-31_0000/leggy.jpg" />

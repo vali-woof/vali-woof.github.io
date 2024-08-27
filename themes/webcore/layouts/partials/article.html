@@ -9,6 +9,13 @@
     </div>
     <div class="e-content">
         {{ .Content }}
+        {{ range $i, $v := .Page.Resources.ByType "image" }}
+            {{ $class := "u-photo" }}
+            {{ if eq $i 0 }}
+                {{ $class = "u-featured" }}
+            {{ end }}
+            <img class="{{ $class }}" src="{{ $v.RelPermalink }}" alt="{{ $v.Params.alt }}" >
+        {{ end }}
     </div>
     <div class="entry-meta">
         <span>

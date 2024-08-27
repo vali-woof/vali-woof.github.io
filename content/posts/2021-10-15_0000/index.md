@@ -7,9 +7,11 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k6ycdukl3x2a", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k6ycdukl3x2a" }
 ]
+resources:
+    - src: "deerguy.jpg"
+      params:
+        alt: "A picture of an anthropomorphic deer wearing a jacket and suit, done with graphite"
 ---
 🦌
 
 {{< category "art" "furryart" >}}
-
-<img class="u-featured" src="/posts/2021-10-15_0000/deerguy.jpg" alt="A picture of an anthropomorphic deer wearing a jacket and suit, done with graphite">
