@@ -1,0 +1,17 @@
+{{ define "title" }}
+  <!-- This will override the default value set in baseof.html; i.e., "{{ .Site.Title }}" in the original example-->
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+{{ partial "breadcrumb.html" . }}
+<h2>{{.Title}}</h2>
+{{.Content}}
+
+<div class="h-feed">
+  {{ range .Data.Pages }}
+    {{ partial "article.html" . }}
+    <hr>
+  {{ end }}
+</div>
+{{ end }}
