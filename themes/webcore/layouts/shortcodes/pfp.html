@@ -1,0 +1,5 @@
+{{ with .Site.Params.IndieWeb.Hcard.Photo }}
+{{ $img := resources.Get . }}
+{{ $img := $img.Resize "50x" }}
+<img class="u-photo" src="{{ $img.Permalink }}" />
+{{ end }}
