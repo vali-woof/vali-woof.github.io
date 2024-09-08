@@ -9,8 +9,6 @@ resources:
     - src: "240704_oceansatedogs.png"
       params:
         alt: "A digital painting of an anthropomorphic borzoi wearing a red Hawaii shirt with flowers on it. They wear thin white glasses which are being pulled down the snoot by their left hand. The other hand is resting on the left elbow bend creating an angular shape. The head is tilting downwards while the yellow eyes are focussing on the viewer. One eyebrow is raised which creates a kind of concerned or questioning expression."
-posttype: "reply"
-origin: "https://example.com"
 ---
 Another {{< category "artfight" >}} attack<br>
 for {{< mention "@wolfsbark.bsky.social" "https://bsky.app/profile/did:plc:nsns4cvjw73qhgypcgqg5v7n" >}}
