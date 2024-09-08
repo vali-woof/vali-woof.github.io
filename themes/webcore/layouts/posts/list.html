@@ -9,9 +9,11 @@
 {{.Content}}
 
 <div class="h-feed">
-  {{ range .Data.Pages }}
+  {{ range .Paginator.Pages }}
     {{ partial "article.html" . }}
     <hr>
   {{ end }}
+  
+  {{ partial "pagination.html" . }}
 </div>
 {{ end }}
