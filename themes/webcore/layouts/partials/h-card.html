@@ -48,7 +48,7 @@
     <div class="p-note">{{ . }}</div>
     {{ end }}
     {{ with .Site.Params.IndieWeb.Urls }}
-        <ul>
+        <ul class="horizontal-list">
             {{ range . }}
             <li>
                 <a href="{{ . }}" class="u-url">{{ . }}</a>

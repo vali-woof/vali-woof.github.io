@@ -27,7 +27,7 @@
             {{ end }}
             <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">Vali</a>
         </span>
-        <ul class="syndication-links">
+        <ul class="syndication-links horizontal-list">
             {{ range .Params.Syndication }}
             <li {{ if .hidden }} style="display: none;" {{ end }}>
                 <a href="{{ .url }}" class="u-syndication">{{ partial "icon.html" (dict "name" .platform "width" "12pt" "height" "12pt") }}</a>

@@ -1,5 +1,9 @@
 @import url('/styles/common.css');
 
+:root {
+    --content-width: 1000px;
+}
+
 #wrapper {
     height: 100vh;
     position: relative;
@@ -12,7 +16,7 @@
 }
 
 header {
-    max-width: 1000px;
+    max-width: var(--content-width);
     margin: 0 auto;
     margin-top: 20px;
     background-color: var(--bg-content);
@@ -22,7 +26,7 @@ header {
 }
 
 .main {
-    max-width: 1000px;
+    max-width: var(--content-width);
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
@@ -165,7 +169,7 @@ ul>li>.done {
 
 /* Breadcrumb */
 
-.breadcrumb li, .syndication-links li {
+.horizontal-list li {
     display: inline;
     list-style: none;
 }
@@ -177,6 +181,10 @@ ul>li>.done {
 
 .syndication-links li {
     padding-left: 10px;
+}
+
+.syndication-links > li > a {
+    text-decoration: none;
 }
 
 .breadcrumb li a {
@@ -219,6 +227,7 @@ ul>li>.done {
 .h-card .u-photo {
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
 }
 
