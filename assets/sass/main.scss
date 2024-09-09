@@ -1,0 +1,179 @@
+@use "theme" as t;
+@use "fun";
+@use "wordart";
+@use "marquee";
+@use "pagination";
+@use "microblog";
+
+$content-width: 1000px;
+
+#wrapper {
+    height: 100vh;
+    position: relative;
+
+    footer {
+        background-color: t.$bg;
+        width: 100%;
+        /* height: 9vh; */
+        /* z-index: 10; */
+        /* border: 1px solid black; */
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+.container {
+    position: absolute;
+    width: 100vw;
+    padding-bottom: 60px;
+}
+
+header {
+    max-width: $content-width;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* position: sticky;
+    top: 0px;
+    z-index: 100; */
+}
+
+.main {
+    max-width: $content-width;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+main {
+    margin: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    /* height: 100%; */
+}
+
+.card {
+    background-color: t.$bg;
+    padding: 20px;
+    /* padding-left: 20px; */
+    margin: 2px;
+    /* flex-direction: row; */
+}
+
+.col-left {
+    position: sticky;
+    max-width: 20px;
+    /* top: 20px; */
+}
+
+.col-left,
+.col-right {
+    max-width: 200px;
+}
+
+.col-center {
+    max-width: 500px;
+    /* width: 50% */
+}
+
+.row {
+    /* flex-direction: row;
+    width: 100%; */
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+#copyright {
+    font-size: x-small;
+}
+
+#construction {
+    color: red;
+    font-size: x-large;
+}
+
+nav {
+    ul {
+        list-style-image: url('/res/icons/folder-closed-16.png');
+
+        li#active {
+            list-style-image: url('/res/icons/folder-open-16.png');
+        }
+
+        li>ul>li {
+            list-style-image: none;
+            list-style-type: '├─';
+            padding-left: 5px;
+        }
+    }
+    
+    
+}
+
+ul>li.done,
+ul>li>.done {
+    text-decoration: line-through;
+}
+
+.flip-vert {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.badges {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#changelog {
+    overflow: scroll;
+    height: 250px;
+}
+
+#furryring {
+    min-width: inherit;
+    margin: 2px !important;
+}
+
+/* Breadcrumb */
+
+.horizontal-list li {
+    display: inline;
+    list-style: none;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    content: "/\00a0";
+}
+
+#statuscafe {
+    padding: .5em;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}

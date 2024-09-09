@@ -10,7 +10,18 @@
     <title>{{ block "title" . }}
         {{ .Site.Title }}
     {{ end }}</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    {{ with resources.Get "sass/main.scss" }}
+        {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
+        {{ with . | toCSS $opts }}
+        {{ if hugo.IsDevelopment }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}">
+        {{ else }}
+            {{ with . | minify | fingerprint }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+            {{ end }}
+        {{ end }}
+        {{ end }}
+    {{ end }}
     <link rel="stylesheet" href="https://furryring.neocities.org/onionring.css">
     <link rel="shortcut icon" href="/res/icons/favicon.ico" type="image/x-icon">
     {{ range .Site.Params.IndieWeb.Urls }}
@@ -27,31 +38,13 @@
     
     {{ end }}
     <style>
-        .entry-meta {
-            {{/*  display: none;  */}}
-        }
-
-        .h-feed {
-            width: 500px;
-        }
-
-        .h-entry {
-            width: 400px;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        /* .h-entry > content > img { */
-        img {
-            max-width: 400px;
-        }
         {{ block "style" . }}
         
         {{ end }}
     </style>
 </head>
 
-<body id="theme" class="theme-3">
+<body>
     <div id="wrapper">
         <img id="gremlin" src="/res/sona/OhLordVali.png" alt="Gremlin by Tischotter" title="Gremlin by Tischotter">
         <video id="valiPls" title="ValiPls by Skaifox" height="100" src="/res/sona/ValiPls.webm" autoplay loop

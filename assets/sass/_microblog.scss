@@ -1,0 +1,59 @@
+.h-feed {
+    width: 500px;
+}
+
+.h-entry {
+    width: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    img {
+        max-width: 400px;
+    }
+}
+
+.syndication-links {
+    text-align: right;
+    flex: 1 1 auto;
+    
+    li {
+        padding-left: 10px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.dt-published {
+    font-style: italic;
+}
+
+.entry-meta, .entry-meta a, .entry-meta a:visited {
+    color: #717171;
+}
+
+.entry-meta {
+    display: flex;
+
+    span {
+        display: flex;
+        align-items: center;
+    }
+    
+    .u-photo {
+        margin-right: 4px;
+        border-radius: 4px;
+    }
+}
+
+.h-card .u-photo {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.u-featured {
+    margin-top:20px
+}
