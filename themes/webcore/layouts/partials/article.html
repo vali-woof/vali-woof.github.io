@@ -14,7 +14,9 @@
             {{ if eq $i 0 }}
                 {{ $class = "u-featured" }}
             {{ end }}
+            <a href="{{ $v.RelPermalink }}">
             <img class="{{ $class }}" src="{{ $v.RelPermalink }}" alt="{{ $v.Params.alt }}" >
+            </a>
         {{ end }}
     </div>
     <div class="entry-meta">

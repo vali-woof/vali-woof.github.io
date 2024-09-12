@@ -6,10 +6,15 @@
 <script src="/js/webmention.js" data-max-webmentions="{{ . }}" async></script>
 {{ end }}
 <link rel="stylesheet" href="/styles/webmention.css">
+<link rel="stylesheet" href="/styles/lightbox.css">
 {{ end }}
 
 {{ define "main" }}
 {{ partial "breadcrumb.html" . }}
 {{ partial "article.html" . }}
   {{/*  {{ .Content }}  */}}
+{{ end }}
+
+{{ define "js" }}
+<script type="text/javascript" src="/js/lightbox.js"></script>
 {{ end }}
