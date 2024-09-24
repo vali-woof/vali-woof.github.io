@@ -29,7 +29,7 @@
     stumbled across <a href="https://melonking.net/">melon's website</a>, which just
     solidified
     my idea...</p>
-<h2><img src="/res/dog.gif" alt="barking dog" class="flip-vert" onclick="bark();">Featured</h2>
+<h2 id="featured"><img src="/res/dog.gif" alt="barking dog" class="flip-vert" onclick="bark();">Featured</h2>
 <div class="gallery">
     {{ range ( where ( where .Site.Pages "Type" "posts" ) ".Params.featured" "=" true ) }}
         {{ $post := . }}
@@ -54,6 +54,13 @@
 </p>
 <h2><img src="/res/dog.gif" alt="barking dog" class="flip-vert" onclick="bark();">Changelog</h2>
 <div id="changelog">
+    <article>
+        <h3>24.09.2024</h3>
+        <ul>
+            <li>Add <a href="#featured">Featured</a> section</li>
+            <li>Update h-card</li>
+        </ul>
+    </article>
     <article>
         <h3>13.09.2024</h3>
         <ul>
