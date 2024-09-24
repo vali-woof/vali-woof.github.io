@@ -8,7 +8,7 @@
 <div class="h-card">
     {{ with .Site.Params.IndieWeb.Hcard.Photo }}
     {{ $img := resources.Get . }}
-    {{ $img := $img.Resize "50x" }}
+    {{ $img := $img.Resize "100x" }}
     <img class="u-photo" src="{{ $img.Permalink }}" />
     {{ end }}
     <a class="u-url" href="{{ .Site.BaseURL }}">
@@ -51,7 +51,7 @@
         <ul class="horizontal-list">
             {{ range . }}
             <li>
-                <a href="{{ . }}" class="u-url">{{ . }}</a>
+                <a style="text-decoration: none;" href="{{ .url }}" class="u-url">{{ partial "icon.html" (dict "name" .name "width" "16pt" "height" "16pt") }}</a>
             </li>
             {{ end }}
         </ul>

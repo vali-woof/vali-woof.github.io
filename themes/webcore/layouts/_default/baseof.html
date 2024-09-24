@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://furryring.neocities.org/onionring.css">
     <link rel="shortcut icon" href="/res/icons/favicon.ico" type="image/x-icon">
     {{ range .Site.Params.IndieWeb.Urls }}
-        <link rel="me" href="{{ . }}">
+    <link rel="me" href="{{ .url }}">
     {{ end }}
     {{ with .Site.Params.IndieWeb.Webmentions.Url }}
         <link rel="webmention" href="{{ . }}" />

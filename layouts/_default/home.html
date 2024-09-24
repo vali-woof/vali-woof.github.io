@@ -1,25 +1,10 @@
 {{ define "main" }}
-{{/*  {{ partial "h-card.html" . }}  */}}
 
-<div class="h-card ">
     <h2 aria-label="waving emoji">( ^_^)／</h2>
-    {{ if .Site.Params.IndieWeb.Hcard.Photo }}
-    {{ $img := resources.Get .Site.Params.IndieWeb.Hcard.Photo }}
-    {{ $img := $img.Resize "100x" }}
-    <img class="u-photo" src="{{ $img.Permalink }}" alt="Sona Portrait"/>
-    {{ end }}
     <p>
         Welcome to my website!
     </p>
-    <p>
-        My name is <strong class="p-name">Vali</strong> (<a href="https://en.wiktionary.org/wiki/he#Pronoun"
-            class="u-pronoun">he</a>/<a href="https://en.wiktionary.org/wiki/they#Pronoun" class="u-pronoun">them</a>)
-        and <span class="p-note">I'm a software engineer and artist on the internet.</span> You can find
-        some of my stuff in the gallery. There's also more art on my <a rel="me" class="u-url"
-            href="https://bsky.app/profile/vali.link">Bluesky</a> (which contains 18+
-        stuff...).<a rel="me" class="u-url" href="https://vali.link"></a>
-    </p>
-</div>
+{{ partial "h-card.html" . }}
 <p>
     <span style="color: red; font-size: x-large; line-height: 100%; text-align: center;"><img
             src="/res/icons/sign-32.png" alt="under construction sign">This

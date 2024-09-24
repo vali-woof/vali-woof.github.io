@@ -1,11 +1,25 @@
 {{ if eq (lower .name) "bluesky" }}
-<img src="/res/icons/brand/bluesky.svg" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}">
+<img src="/res/icons/brand/bluesky.svg" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}" title="{{ .name }}">
 {{ else if eq (lower .name) "github" }}
-<img src="/res/icons/brand/github-mark-white.svg" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}">
+<img src="/res/icons/brand/github-mark-white.svg" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}" title="{{ .name }}">
 {{ else if eq (lower .name) "mastodon" }}
-<img src="/res/icons/brand/mastodon.svg" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}">
+<img src="/res/icons/brand/mastodon.svg" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}" title="{{ .name }}">
 {{ else if eq (lower .name) "twitch" }}
-<img src="/res/icons/brand/glitch_flat_white.svg" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}">
+<img src="/res/icons/brand/glitch_flat_white.svg" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}" title="{{ .name }}">
+{{ else if eq (lower .name) "artfight" }}
+{{ $img := resources.Get "icons/brand/artfight.png" }}
+{{ $width := strings.TrimSuffix "pt" .width }}
+{{ $height := strings.TrimSuffix "pt" .height }}
+{{ $size := (printf "%s" $width | printf "%sx%s" $height | printf "%s")}}
+{{ $img := $img.Resize $size }}
+<img src="{{ $img.Permalink }}" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}" title="{{ .name }}">
+{{ else if eq (lower .name) "furaffinity" }}
+{{ $img := resources.Get "icons/brand/Fur_Affinity_logo.png" }}
+{{ $width := strings.TrimSuffix "pt" .width }}
+{{ $height := strings.TrimSuffix "pt" .height }}
+{{ $size := (printf "%s" $width | printf "%sx%s" $height | printf "%s")}}
+{{ $img := $img.Resize $size }}
+<img src="{{ $img.Permalink }}" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}" title="{{ .name }}">
 {{ else }}
 {{ .name }}
 {{ end }}
