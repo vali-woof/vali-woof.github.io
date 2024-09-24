@@ -54,13 +54,14 @@ var colour = "random"; // "random" can be replaced with any valid colour ie: "re
     (ns) ? window.onMouseMove = Mouse : document.onmousemove = Mouse;
 
     window.onload = function () {
-        if (document.getElementById) {
+        if (document.getElementById("trails")) {
+            var trails = document.getElementById("trails");
             var i, rats, rlef, rdow;
             for (var i = 0; i < sparkles; i++) {
                 var rats = createDiv(3, 3);
                 rats.style.visibility = "hidden";
                 rats.style.zIndex = "999";
-                document.body.appendChild(tiny[i] = rats);
+                trails.appendChild(tiny[i] = rats);
                 starv[i] = 0;
                 tinyv[i] = 0;
                 var rats = createDiv(5, 5);
@@ -75,7 +76,7 @@ var colour = "random"; // "random" can be replaced with any valid colour ie: "re
                 rlef.style.left = "0px";
                 rdow.style.top = "0px";
                 rdow.style.left = "2px";
-                document.body.appendChild(star[i] = rats);
+                trails.appendChild(star[i] = rats);
             }
             set_width();
             sparkle();
