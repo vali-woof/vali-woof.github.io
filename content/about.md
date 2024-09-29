@@ -16,6 +16,11 @@ title: "About"
             stuff...).<a rel="me" class="u-url" href="https://vali.link"></a></p>
     </div>
 </div>
+<div class="card" id="ref">
+    <h3>Reference Sheet</h3>
+    Wanna see my scuffed and totally not WIP ref sheet of my sona?<br />
+    <a href="/ref">Here you go.</a>
+</div>
 <div class="card" id="games">
     <h3>Games</h3>
     These are some nice games in no particular order:
