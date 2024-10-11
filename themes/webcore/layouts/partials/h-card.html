@@ -51,7 +51,9 @@
         <ul class="horizontal-list">
             {{ range . }}
             <li>
-                <a style="text-decoration: none;" href="{{ .url }}" class="u-url">{{ partial "icon.html" (dict "name" .name "width" "16pt" "height" "16pt") }}</a>
+                <a style="text-decoration: none;" href="{{ .url }}" class="u-url" target="_blank" rel="me">
+                    {{ partial "icon.html" (dict "name" .name "width" "16pt" "height" "16pt") }}
+                </a>
             </li>
             {{ end }}
         </ul>
