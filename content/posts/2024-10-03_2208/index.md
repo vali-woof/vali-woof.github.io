@@ -2,6 +2,7 @@
 date: 2024-10-03T22:08:47+02:00
 categories:
     - furryart
+    - digitalart
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3l5n3lqbioe2f", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3l5n3lqbioe2f" }

@@ -4,6 +4,7 @@ categories:
     - furryart
     - artfight
     - artfight2023
+    - digitalart
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k7jngwnpui2d", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k7jngwnpui2d" }
