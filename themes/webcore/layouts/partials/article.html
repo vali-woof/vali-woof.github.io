@@ -11,11 +11,12 @@
         {{ .Content }}
         {{ range $i, $v := .Page.Resources.ByType "image" }}
             {{ $class := "u-photo" }}
+            {{ $img  := $v.Resize "400x" }}
             {{ if eq $i 0 }}
                 {{ $class = "u-featured" }}
             {{ end }}
             <a href="{{ $v.RelPermalink }}">
-            <img class="{{ $class }}" src="{{ $v.RelPermalink }}" alt="{{ $v.Params.alt }}" >
+                <img class="{{ $class }}" src="{{ $img.RelPermalink }}" alt="{{ $v.Params.alt }}" >
             </a>
         {{ end }}
     </div>
