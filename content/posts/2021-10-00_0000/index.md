@@ -7,6 +7,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k55eafq5pf2g" },
     { platform: "Mastodon", url: "https://bark.lgbt/@vali/113012481397768047" }
 ]
+images:
+    - "cerberus.jpg"
 resources:
     - src: "cerberus.png"
       params:

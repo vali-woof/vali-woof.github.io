@@ -7,6 +7,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k6dt43kgkf2o", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k6dt43kgkf2o" }
 ]
+images:
+    - "mountain-lake.jpg"
 resources:
     - src: "mountain-lake.jpg"
       params:

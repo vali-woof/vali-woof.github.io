@@ -7,6 +7,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3l5n3lqbioe2f", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3l5n3lqbioe2f" }
 ]
+images:
+    - "240928_theo bday_bg.png"
 resources:
     - src: "240928_theo bday_bg.png"
       params:

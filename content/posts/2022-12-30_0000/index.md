@@ -7,6 +7,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k5xaqsxgls2x", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k5xaqsxgls2x" }
 ]
+images:
+    - "roses.jpeg"
 resources:
     - src: "roses.jpeg"
       params:

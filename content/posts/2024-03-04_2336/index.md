@@ -7,6 +7,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kyxlnu46er2l", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kyxlnu46er2l" }
 ]
+images:
+    - "triangledog.jpg"
 resources:
     - src: "triangledog.jpg"
       params:

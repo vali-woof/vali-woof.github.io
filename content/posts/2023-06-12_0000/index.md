@@ -6,6 +6,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3keigxgko4n2j", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3keigxgko4n2j" }
 ]
+images:
+    - "hay-bale.jpg"
 resources:
     - src: "hay-bale.jpg"
       params:

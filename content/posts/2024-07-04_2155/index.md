@@ -5,6 +5,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kwig2adszs2c", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kwig2adszs2c" }
 ]
+images:
+    - "240704_oceansatedogs.png"
 resources:
     - src: "240704_oceansatedogs.png"
       params:

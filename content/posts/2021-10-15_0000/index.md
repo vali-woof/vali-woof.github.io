@@ -7,6 +7,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k6ycdukl3x2a", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k6ycdukl3x2a" }
 ]
+images:
+    - "deerguy.jpg"
 resources:
     - src: "deerguy.jpg"
       params:

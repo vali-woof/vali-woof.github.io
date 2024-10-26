@@ -7,6 +7,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3l6z3q626vv2o", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3l6z3q626vv2o" }
 ]
+images:
+    - "241011_borzoi meme.png"
 resources:
     - src: "241011_borzoi meme.png"
       params:

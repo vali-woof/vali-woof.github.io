@@ -4,6 +4,8 @@ categories:
     - art
     - traditionalart
 syndication: [ ]
+images:
+    - "road.jpeg"
 resources:
     - src: "road.jpeg"
       params:

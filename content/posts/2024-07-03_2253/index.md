@@ -9,6 +9,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kwfs4usqhb2o", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kwfs4usqhb2o" }
 ]
+images:
+    - "artfight2024-goldenpelt.jpg"
 resources:
     - src: "artfight2024-goldenpelt.jpg"
       params:

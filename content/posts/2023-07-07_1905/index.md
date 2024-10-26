@@ -9,6 +9,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k7wob4lobu25", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k7wob4lobu25" }
 ]
+images:
+    - "WereLycanthrope.jpg"
 resources:
     - src: "WereLycanthrope.jpg"
       params:

@@ -8,6 +8,8 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k52spdkx232b" },
     { platform: "Mastodon", url: "https://bark.lgbt/@vali/113047855671426244" }
 ]
+images:
+    - "lion.jpg"
 resources:
     - src: "lion.jpg"
       params:
