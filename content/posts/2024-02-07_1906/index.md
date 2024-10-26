@@ -10,10 +10,10 @@ images:
     - "cat1.png"
     - "cat2.png"
 resources:
-    - src: "cat1"
+    - src: "cat1.png"
       params:
         alt: "oil pastel painting of a cat's face"
-    - src: "cat2"
+    - src: "cat2.png"
       params:
         alt: "felt tip pen drawing of a cat's face"
 ---
