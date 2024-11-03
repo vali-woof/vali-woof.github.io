@@ -9,12 +9,7 @@
 {{ define "main" }}
 {{ partial "breadcrumb.html" . }}
 <h2>{{.Title}}</h2>
-<ul class="horizontal-list" style="text-align: right;">
-  <li><a href="/posts/">All</a></li>
-  {{ range $key, $value := .Site.Taxonomies.posttypes }}
-  <li><a href="/posttypes/{{ $key }}">{{ replace $key "-" " "| title }}</a></li>
-  {{ end }}
-</ul>
+{{ partial "posttypemenu.html" . }}
 
 {{.Content}}
 

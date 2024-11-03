@@ -1,0 +1,6 @@
+<ul class="horizontal-list" style="text-align: right;">
+    <li><a href="/posts/">All</a></li>
+    {{ range $key, $value := .Site.Taxonomies.posttypes }}
+    <li style="padding-left: 5px;"><a href="/posttypes/{{ $key }}">{{ replace $key "-" " "| title }}</a></li>
+    {{ end }}
+</ul>
