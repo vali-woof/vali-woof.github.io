@@ -3,6 +3,8 @@ date: 2024-10-21T10:27:00+02:00
 categories:
     - furryart
     - digitalart
+tags:
+    - Vali
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3l6z3q626vv2o", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3l6z3q626vv2o" }

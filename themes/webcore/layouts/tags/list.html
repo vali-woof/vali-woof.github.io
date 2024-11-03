@@ -1,0 +1,18 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+{{ partial "breadcrumb.html" . }}
+<h2>{{.Title}}</h2>
+{{.Content}}
+
+<div class="h-feed">
+  {{ range .Paginator.Pages }}
+    {{ partial "article.html" . }}
+    <hr>
+  {{ end }}
+  
+  {{ partial "pagination.html" . }}
+</div>
+{{ end }}

@@ -22,6 +22,7 @@ theme = "webcore"
 
 [taxonomies]
     category = "categories"
+    tag = "tags"
     posttype = "posttypes"
 
 [permalinks]

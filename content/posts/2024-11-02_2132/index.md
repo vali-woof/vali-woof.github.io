@@ -1,7 +1,7 @@
 ---
 date: 2024-11-02T21:32:33+01:00
-categories:
-    - 
+tags:
+    - Vali
 images:
     - "web vali popup.png"
 resources:
