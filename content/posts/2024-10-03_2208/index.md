@@ -13,7 +13,7 @@ resources:
     - src: "240928_theo bday_bg.png"
       params:
         alt: "drawing of close up horse head meme"
-posttype: "post"
+posttypes: "post"
 ---
 🐴
 

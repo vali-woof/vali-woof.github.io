@@ -13,7 +13,7 @@ resources:
     - src: "241011_dog of wisdom.png"
       params:
         alt: "my sona as a drawover of the dog from dog of wisdom"
-posttype: "post"
+posttypes: "post"
 ---
 Hababegedabeda<br>
 {{< category "furryart" >}}

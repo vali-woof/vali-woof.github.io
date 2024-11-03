@@ -13,7 +13,7 @@ resources:
     - src: "241011_borzoi meme.png"
       params:
         alt: "drawover of a picture of a borzoi peeking through the door"
-posttype: "post"
+posttypes: "post"
 ---
 Hehehehe<br>
 {{< category "furryart" >}}
