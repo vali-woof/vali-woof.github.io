@@ -2,6 +2,10 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 
+{{ define "head" }}
+<link rel="stylesheet" href="/styles/lightbox.css">
+{{ end }}
+
 {{ define "main" }}
 {{ partial "breadcrumb.html" . }}
 <h2>{{.Title}}</h2>
@@ -22,4 +26,8 @@
   
   {{ partial "pagination.html" . }}
 </div>
+{{ end }}
+
+{{ define "js" }}
+<script type="text/javascript" src="/js/lightbox.js"></script>
 {{ end }}
