@@ -13,6 +13,7 @@ resources:
     - src: "triangledog.jpg"
       params:
         alt: "a drawing of a dog's face on top of a red triangle, the bottom of the triangle is smudged"
+posttypes: post
 ---
 🔺🐶
 

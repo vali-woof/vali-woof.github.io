@@ -13,5 +13,6 @@ resources:
     - src: "raven.jpg"
       params:
         alt: "A graphite drawing of a raven head in profile"
+posttypes: post
 ---
 {{< category "art" "traditionalart" >}}

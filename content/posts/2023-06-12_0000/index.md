@@ -12,6 +12,7 @@ resources:
     - src: "hay-bale.jpg"
       params:
         alt: "A picture of a hay bale in a field. Done with water color, markers, colored pencils"
+posttypes: post
 ---
 Hay there
 

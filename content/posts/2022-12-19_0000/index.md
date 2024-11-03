@@ -10,4 +10,5 @@ resources:
     - src: "road.jpeg"
       params:
         alt: "A drawing of a road on a hilly landscape"
+posttypes: post
 ---

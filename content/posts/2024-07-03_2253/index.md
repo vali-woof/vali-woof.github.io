@@ -15,6 +15,7 @@ resources:
     - src: "artfight2024-goldenpelt.jpg"
       params:
         alt: "A digital painting of a curled up red cat"
+posttypes: post
 ---
 
 Eepy - First {{< category "artfight" >}} attack of the year<br>

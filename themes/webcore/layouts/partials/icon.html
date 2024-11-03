@@ -20,6 +20,12 @@
 {{ $size := (printf "%s" $width | printf "%sx%s" $height | printf "%s")}}
 {{ $img := $img.Resize $size }}
 <img src="{{ $img.Permalink }}" width="{{ .width }}" height="{{ .height }}" alt="{{ .name }}" title="{{ .name }}">
+{{ else if eq (lower .name) "reply" }}
+<span title="Reply to">↪️</span>
+{{ else if eq (lower .name) "repost" }}
+<span title="Repost of">🔁</span>
+{{ else if eq (lower .name) "like" }}
+<span title="Like of">❤️</span>
 {{ else }}
 {{ .name }}
 {{ end }}

@@ -10,6 +10,7 @@ syndication: [
 ]
 images:
     - "leggy.jpg"
+posttype: "post"
 ---
 Sona doodle
 

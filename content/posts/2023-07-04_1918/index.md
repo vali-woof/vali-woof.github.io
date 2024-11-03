@@ -15,6 +15,7 @@ resources:
     - src: "Tisch.jpg"
       params:
         alt: "A digital painting of Tischotter as The Count"
+posttypes: post
 ---
 🧛‍♂️ The Countotter<br>
 ⚔️ Art Fight 2023<br>

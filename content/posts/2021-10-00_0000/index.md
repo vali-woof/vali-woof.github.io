@@ -13,6 +13,7 @@ resources:
     - src: "cerberus.png"
       params:
         alt: "A portrait of Cerberus as he is depicted in the video game Hades. Done with alcohol markers. He has red fur, blue eyes, green noses and yellow tongues with orange highlights. All three heads are looking left. The one in the background is in full profile and for most part, only the silhouette is visible, except for the blue eyes and some highlights on the muzzle, forehead, ear and collar. The head in the foreground has the same kind of collar. A brown one featuring a skull as a dog tag."
+posttypes: post
 ---
 🐶🐶🐶
 

@@ -13,6 +13,7 @@ resources:
     - src: "doggo4.jpg"
       params:
         alt: "An ink drawing of a dog wearing a winter hat with a pompom"
+posttypes: post
 ---
 Doggo 4<br>
 {{< category "art" >}}

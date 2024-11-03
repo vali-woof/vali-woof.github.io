@@ -13,6 +13,7 @@ resources:
     - src: "mountain-lake.jpg"
       params:
         alt: "Digital painting depicting mountains in the background, a lake in the midground and some trees in the foreground"
+posttypes: post
 ---
 🏞️
 

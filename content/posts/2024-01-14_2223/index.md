@@ -12,6 +12,7 @@ resources:
     - src: "doggo3.png"
       params:
         alt: "ink sketch of a Labrador wearing a propeller hat, making a silly face"
+posttypes: post
 ---
 Doggo 3<br>
 {{< category "art" >}}

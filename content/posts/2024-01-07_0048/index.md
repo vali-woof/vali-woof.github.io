@@ -13,6 +13,7 @@ resources:
     - src: "cat.png"
       params:
         alt: "Pencil sketch of a sleeping cat"
+posttypes: post
 ---
 Sketch of a sleeping cat<br>
 {{<category "art" "traditionalart">}}

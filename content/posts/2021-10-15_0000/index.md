@@ -14,6 +14,7 @@ resources:
       params:
         alt: "A picture of an anthropomorphic deer wearing a jacket and suit, done with graphite"
 featured: true
+posttypes: post
 ---
 🦌
 

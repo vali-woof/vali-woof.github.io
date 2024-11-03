@@ -12,6 +12,7 @@ resources:
     - src: "akita.jpg"
       params:
         alt: "A charcoal drawing of an Akita dog"
+posttypes: post
 ---
 🐶
 
