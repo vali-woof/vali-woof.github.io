@@ -8,4 +8,4 @@ images:
 </a>
 
 ### Art
-If you want to get an idea how my sona was depicted in previous works, you can find posts containing them [here](/tags/Vali).
+If you want to get an idea how my sona was depicted in previous works, you can find posts containing them [here](/tags/vali).
