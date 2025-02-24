@@ -5,7 +5,8 @@ categories:
     - furryart
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k6ycdukl3x2a", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k6ycdukl3x2a" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k6ycdukl3x2a" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/56573644/" }
 ]
 images:
     - "deerguy.jpg"

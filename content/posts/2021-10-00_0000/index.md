@@ -5,7 +5,8 @@ categories:
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k55eafq5pf2g", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k55eafq5pf2g" },
-    { platform: "Mastodon", url: "https://bark.lgbt/@vali/113012481397768047" }
+    { platform: "Mastodon", url: "https://bark.lgbt/@vali/113012481397768047" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/58668967/" }
 ]
 images:
     - "cerberus.jpg"

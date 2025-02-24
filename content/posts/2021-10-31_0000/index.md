@@ -5,7 +5,8 @@ categories:
     - traditionalart
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k5s7xmxvyp26", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k5s7xmxvyp26" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k5s7xmxvyp26" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/56573814/" }
 ]
 images:
     - "raven.jpg"
