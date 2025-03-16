@@ -1,31 +1,8 @@
-{{ define "title" }}
-  {{ .Title }} &ndash; {{ .Site.Title }}
-{{ end }}
-
 {{ define "head" }}
-<link rel="stylesheet" href="/styles/lightbox.css">
 <link rel="stylesheet" href="/styles/iframemanager.css">
 {{ end }}
 
-{{ define "main" }}
-{{ partial "breadcrumb.html" . }}
-<h2>{{.Title}}</h2>
-{{ partial "posttypemenu.html" . }}
-
-{{.Content}}
-
-<div class="h-feed">
-  {{ range .Paginator.Pages }}
-    {{ partial "article.html" . }}
-    <hr>
-  {{ end }}
-  
-  {{ partial "pagination.html" . }}
-</div>
-{{ end }}
-
 {{ define "js" }}
-<script type="text/javascript" src="/js/lightbox.js"></script>
 <script type="text/javascript" src="/js/iframemanager.js"></script>
 
 <script>
@@ -70,7 +47,7 @@
             en: {
               notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer noopener" href="https://bsky.social/about/support/tos" target="_blank">terms and conditions</a> of bsky.social.',
               loadBtn: 'Load once',
-              loadAllBtn: "Always load"
+              loadAllBtn: "Don't ask again"
             }
           }
         }
