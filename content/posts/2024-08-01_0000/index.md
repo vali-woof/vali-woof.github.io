@@ -10,6 +10,7 @@ origin:
 
 <div data-service="bluesky"
     class="bluesky-embed" 
+    data-bluesky-embed-color-mode="system"
     data-bluesky-uri="at://did:plc:xrrir6tkc5vbsk5f52rhk4vx/app.bsky.feed.post/3kyo6zn5p322u"
     data-bluesky-cid="bafyreibfund5gdus4geruumc2jblig7dilnnhb2dxn3k2qoneu3r3n6xvq">
 </div>
