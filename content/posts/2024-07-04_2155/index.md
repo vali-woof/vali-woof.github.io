@@ -3,7 +3,8 @@ date: 2024-07-04T21:55:00
 categories: [ "artfight", "artfight2024", "furryart" ]
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kwig2adszs2c", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kwig2adszs2c" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kwig2adszs2c" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/61507950/" }    
 ]
 images:
     - "240704_oceansatedogs.png"
