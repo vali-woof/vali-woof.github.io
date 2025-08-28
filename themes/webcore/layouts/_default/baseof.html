@@ -23,7 +23,12 @@
         {{ end }}
     {{ end }}
     <link rel="stylesheet" href="https://furryring.neocities.org/onionring.css">
-    <link rel="shortcut icon" href="/res/icons/favicon.ico" type="image/x-icon">
+    {{ with .Site.Params.IndieWeb.Hcard.Photo }}
+    {{ $img := resources.Get . }}
+    {{ $img := $img.Resize "16x" }}
+    <img class="u-photo" src="{{ $img.Permalink }}" />
+    <link rel="shortcut icon" href="{{ $img.Permalink }}" type="image/png">
+    {{ end }}
     {{ range .Site.Params.IndieWeb.Urls }}
     <link rel="me" href="{{ .url }}">
     {{ end }}
