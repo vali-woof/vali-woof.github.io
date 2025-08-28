@@ -48,11 +48,11 @@
     <div class="p-note">{{ . }}</div>
     {{ end }}
     {{ with .Site.Params.IndieWeb.Urls }}
-        <ul class="horizontal-list">
+        <ul class="horizontal-list" style="padding-left: 0px; text-align: center;">
             {{ range . }}
             <li>
                 <a style="text-decoration: none;" href="{{ .url }}" class="u-url" target="_blank" rel="me">
-                    {{ partial "icon.html" (dict "name" .name "width" "16pt" "height" "16pt") }}
+                    {{ partial "icon.html" (dict "name" .name "width" "32pt" "height" "32pt") }}
                 </a>
             </li>
             {{ end }}
