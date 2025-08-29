@@ -1,6 +1,6 @@
 ---
 title: "2025-06-02"
-date: 2025-06-02T22:12:44+01:00
+date: 2025-06-02T22:12:44+02:00
 categories:
     - art
     - traditionalart
