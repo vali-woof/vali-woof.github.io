@@ -26,7 +26,6 @@
     {{ with .Site.Params.IndieWeb.Hcard.Photo }}
     {{ $img := resources.Get . }}
     {{ $img := $img.Resize "16x" }}
-    <img class="u-photo" src="{{ $img.Permalink }}" />
     <link rel="shortcut icon" href="{{ $img.Permalink }}" type="image/png">
     {{ end }}
     {{ range .Site.Params.IndieWeb.Urls }}
