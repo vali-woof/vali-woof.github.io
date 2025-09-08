@@ -50,8 +50,6 @@ title: "About"
         <li><a target="_blank" href="https://bsky.app/profile/vali.link">Bluesky</a></li>
         <li><a target="_blank" href="https://twitch.tv/vali_woof">Twitch</a> (not actively streaming
             though)</li>
-        <li><span style="text-decoration: line-through;">Twitter</span> well, I'm on there but don't
-            use it anymore. Fuck Twitter!</li>
     </ul>
     <p>
         If you aren't a robot you can also send some electronic mail my way: webmaster <img
