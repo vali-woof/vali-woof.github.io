@@ -13,6 +13,11 @@
 .gallery .column {
     margin-bottom: 0px;
 }
+
+#src8831:disabled {
+    background-color: #fff;
+    color: #000;
+}
 </style>
 {{ end }}
 
@@ -67,8 +72,8 @@
 <h2 id="8831"><img src="/res/dog.gif" alt="barking dog" class="flip-vert" onclick="bark();">Banner</h2>
 <p>You can put this on your homepage and stuff. I'd love to know, if you do :)</p>
 <p>
-    <a href="https://vali.link/"><img src="/res/8831/vali_8831.png" alt="Vali's Homepage"></a>
-    <textarea><a href="https://vali.link/"><img src="https://vali.link/res/8831/vali_8831.png" alt="Vali's Homepage"></a></textarea>
+    <a onclick="copy8831()" title="Copy 8831 HTML" style="cursor: pointer;"><img src="/res/8831/vali_8831.png" alt="Vali's Homepage"></a>
+    <textarea id="src8831" disabled><a href="https://vali.link/"><img src="https://vali.link/res/8831/vali_8831.png" alt="Vali's Homepage"></a></textarea>
 </p>
 <h2><img src="/res/dog.gif" alt="barking dog" class="flip-vert" onclick="bark();">Changelog</h2>
 <div id="changelog">
@@ -155,4 +160,19 @@
 </div>
 {{ .Content }}
 
+{{ end }}
+
+{{ define "js" }}
+<script>
+    function copy8831() {
+        var copyText = document.getElementById("src8831");
+    
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+    
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+    }
+</script>
 {{ end }}
