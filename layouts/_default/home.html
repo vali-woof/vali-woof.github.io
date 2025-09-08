@@ -4,6 +4,16 @@
 {{ $img := $img.Resize "100x" }}
 <meta property="og:image" content="{{ $img.Permalink }}">
 {{ end }}
+<style>
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.gallery .column {
+    margin-bottom: 0px;
+}
+</style>
 {{ end }}
 
 {{ define "main" }}
@@ -145,15 +155,4 @@
 </div>
 {{ .Content }}
 
-{{ end }}
-
-{{ define "style" }}
-.gallery {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-.gallery .column {
-    margin-bottom: 0px;
-}
 {{ end }}
