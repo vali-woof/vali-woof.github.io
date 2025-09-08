@@ -57,4 +57,8 @@ title: "About"
         image with the @ symbol...)
     </p>
 </div>
+<div class="card">
+    <h3>Links</h3>
+    <a href="/links">Here</a> are some sources and tools I used to create this site.
+</div>
 <a href="#top" id="bottom">&ShortUpArrow; Top</a>
