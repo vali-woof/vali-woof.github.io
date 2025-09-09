@@ -16,6 +16,7 @@ resources:
     - src: "241107_drawover.jpg"
       params:
         alt: "Sona saying \"Im overstimulated and im eepy\""
+posttypes: "post"
 ---
 Eepy (recolor)<br>
 {{< category "furryart" >}}

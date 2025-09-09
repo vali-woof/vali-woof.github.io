@@ -42,7 +42,7 @@
         {{ end }}
     </div>
     <div class="entry-meta">
-        <span>
+        <span class="{{.Params.PostTypes}}">
             {{ if eq .Params.PostTypes "reply" }}
                 replied
             {{ else if eq .Params.PostTypes "like" }}
@@ -55,7 +55,7 @@
             &nbsp;<time class="dt-published" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "Jan 02, 2006 15:04" }}</time>
             
             {{ with .Params.Author }}
-            , original post by&nbsp;<a rel="author" class="p-author h-card" href="{{ .Url }}">{{ .Name }}</a>
+            — original post by&nbsp;<a rel="author" class="p-author h-card" href="{{ .Url }}">{{ .Name }}</a>
             {{ else }}
                 {{ with .Site.Params.IndieWeb.Hcard.Photo }}
                     {{ $img := resources.Get . }}
@@ -65,13 +65,15 @@
                 <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">{{ .Site.Params.IndieWeb.Hcard.Name }}</a>
             {{ end }}
         </span>
+        {{ with .Params.Syndication }}
         <ul class="syndication-links horizontal-list">
-            {{ range .Params.Syndication }}
+            {{ range . }}
             <li {{ if .hidden }} style="display: none;" {{ end }}>
                 <a href="{{ .url }}" class="u-syndication">{{ partial "icon.html" (dict "name" .platform "width" "12pt" "height" "12pt") }}</a>
             </li>
             {{ end }}
         </ul>
+        {{ end }}
         {{ range .Params.Publish }}
         <a href="https://brid.gy/publish/{{ . }}" style="display: none;"></a>
         {{ end }}
