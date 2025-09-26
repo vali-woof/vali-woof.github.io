@@ -337,7 +337,7 @@ A more detailed example:
 
         const type = `<span class="${linkclass}">${linktext}</span>`;
 
-        return `<li>${image} ${link} ${type}</li>`;
+        return `<li>${image} <div class="comment">${link} <br /> ${type}</div></li>`;
       })
     .join('');
     return `

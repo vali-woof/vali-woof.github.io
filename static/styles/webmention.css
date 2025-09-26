@@ -60,13 +60,13 @@
 }
 
 #webmentions .comments li {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
 #webmentions .comments li .text {
-    color: #555;
+    /* color: #555; */
     font-style: italic;
     text-decoration: none;
 }
@@ -83,3 +83,15 @@
     display: inline-block;
  }
 
+#webmentions .comments .reaction {
+    float: left;
+    margin-right: 20px;
+}
+
+#webmentions .comment {
+    text-indent: 0;
+}
+
+#webmentions .comments .reaction img {
+    float: left;
+}
