@@ -13,7 +13,7 @@ title: "About"
             find
             some of my stuff in the gallery. There's also more art on my <a rel="me" class="u-url"
                 href="https://bsky.app/profile/vali.link">Bluesky</a> (which contains 18+
-            stuff...).<a rel="me" class="u-url" href="https://vali.link"></a></p>
+            stuff…).<a rel="me" class="u-url" href="https://vali.link"></a></p>
     </div>
 </div>
 <div class="card" id="ref">
@@ -54,7 +54,7 @@ title: "About"
     <p>
         If you aren't a robot you can also send some electronic mail my way: webmaster <img
             src="/res/dog.gif" onclick="bark();"> vali dot link. (You obviously need to replace that
-        image with the @ symbol...)
+        image with the @ symbol…)
     </p>
 </div>
 <div class="card">
