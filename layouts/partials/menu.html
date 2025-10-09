@@ -1,7 +1,13 @@
+{{ with site.Menus.main }}
 <nav class="card">
     <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/posts">Posts</a></li>
-        <li><a href="/about">About</a></li>
+        {{ range .}}
+            {{ if $.IsMenuCurrent .Menu . }}
+                <li><a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ else }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+        {{ end }}
     </ul>
 </nav>
+{{ end }}

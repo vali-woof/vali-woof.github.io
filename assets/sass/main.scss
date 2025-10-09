@@ -107,7 +107,7 @@ nav {
     ul {
         list-style-image: url('/res/icons/folder-closed-16.png');
 
-        li#active {
+        li:has(.active) {
             list-style-image: url('/res/icons/folder-open-16.png');
         }
 
