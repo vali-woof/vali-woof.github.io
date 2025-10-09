@@ -1,0 +1,8 @@
+{{ with .Site.Params.StatusCafe.name }}
+<div class="card" id="statuscafe">
+    <h6>Status</h6>
+    <div id="statuscafe-username"></div>
+    <div id="statuscafe-content"></div>
+</div>
+<script src="https://status.cafe/current-status.js?name={{ . }}" defer></script>
+{{ end }}

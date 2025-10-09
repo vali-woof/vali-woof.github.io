@@ -63,12 +63,7 @@
                         <h6>GIF of the day</h6>
                         <img src="/res/potato-chips-min.gif" alt="potato chip" onclick="chip.play();">
                     </div>
-                    <div class="card" id="statuscafe">
-                        <h6>Status</h6>
-                        <div id="statuscafe-username"></div>
-                        <div id="statuscafe-content"></div>
-                    </div>
-                    <script src="https://status.cafe/current-status.js?name=vali" defer></script>
+                    {{ partial "statuscafe" . }}
                     <div class="card">
                         <a href="https://bsky.app/profile/vali.link" target="_blank"><img src="/res/bsky-dark.png"
                                 alt="Bluesky: vali.link"></a><br>

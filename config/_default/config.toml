@@ -16,6 +16,9 @@ theme = "webcore"
     [params.IndieWeb.Webmentions]
         url = "https://webmention.io/vali.link/webmention"
         maxWebmentions = "99"
+    
+[params.StatusCafe]
+    name = "vali"
 
 [markup.goldmark.renderer]
     unsafe = true
