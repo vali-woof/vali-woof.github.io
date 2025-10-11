@@ -1,0 +1,21 @@
+{{ define "main" }}
+    <h2>404 Not Found</h2>
+    <p>Oops! The page you are looking for doesn't exist.</p>
+    <img id="borzoi" src="" alt="">
+{{ end }}
+{{ define "js" }}
+    <script>
+        const image_array = [
+            {{ range resources.Match "img/borzoi/*.*" }}
+                '{{ .RelPermalink }}',
+            {{ end }}
+        ];
+
+        function get_random_image() {
+            const random_index = Math.floor(Math.random() * image_array.length);
+            const selected_image = image_array[random_index];
+            document.getElementById('borzoi').src = `${selected_image}`;
+        }
+        get_random_image();
+    </script>
+{{ end }}
