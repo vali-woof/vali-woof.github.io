@@ -22,7 +22,7 @@
 {{- if in $validFormats $format }}
   {{- if gt $page.Paginator.TotalPages 1 }}
     <ul class="pagination pagination-{{ $format }} horizontal-list">
-      {{- partial (printf "partials/inline/pagination/%s" $format) $page }}
+      {{- partial (printf "inline/pagination/%s.html" $format) $page }}
     </ul>
   {{- end }}
 {{- else }}
@@ -31,7 +31,7 @@
 
 {{/* Format: default
 {{/* --------------------------------------------------------------------- */}}
-{{- define "partials/inline/pagination/default" }}
+{{- define "_partials/inline/pagination/default.html" }}
   {{- with .Paginator }}
     {{- $currentPageNumber := .PageNumber }}
 
@@ -102,7 +102,7 @@
 
 {{/* Format: terse
 {{/* --------------------------------------------------------------------- */}}
-{{- define "partials/inline/pagination/terse" }}
+{{- define "_partials/inline/pagination/terse.html" }}
   {{- with .Paginator }}
     {{- $currentPageNumber := .PageNumber }}
 
