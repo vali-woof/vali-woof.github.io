@@ -22,7 +22,8 @@
         {{ end }}
         {{ end }}
     {{ end }}
-    <link rel="stylesheet" href="https://furryring.neocities.org/onionring.css">
+    <link rel="preload" href="https://furryring.neocities.org/onionring.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://furryring.neocities.org/onionring.css"></noscript>
     {{ with .Site.Params.IndieWeb.Hcard.Photo }}
     {{ $img := resources.Get . }}
     {{ $img := $img.Resize "16x" }}
