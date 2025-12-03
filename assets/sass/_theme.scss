@@ -10,8 +10,12 @@ body {
     color: $color;
     font-family: 'Comic Sans MS';
     
+    a {
+        color: #529AFF;
+    }
+
     a:visited {
-        color: #8e3bbe;
+        color: #BB86DA;
     }
 
     .main, header {
