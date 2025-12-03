@@ -1,7 +1,7 @@
 {{ define "head" }}
 {{ with .Site.Params.IndieWeb.Hcard.Photo }}
 {{ $img := resources.Get . }}
-{{ $img := $img.Resize "100x" }}
+{{ $img := $img.Resize "100x webp drawing" }}
 <meta property="og:image" content="{{ $img.Permalink }}">
 {{ end }}
 <style>
@@ -58,7 +58,7 @@
         {{ $post := . }}
         
         {{ range $i, $v := .Page.Resources.ByType "image" }}
-            {{ $v := $v.Resize "220x" }}
+            {{ $v := $v.Resize "220x webp drawing" }}
             {{ $class := "u-photo" }}
             {{ if eq $i 0 }}
                 {{ $class = "u-featured" }}

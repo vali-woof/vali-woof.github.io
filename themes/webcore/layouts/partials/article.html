@@ -32,7 +32,7 @@
         {{ .Content }}
         {{ range $i, $v := .Page.Resources.ByType "image" }}
             {{ $class := "u-photo" }}
-            {{ $img  := $v.Resize "400x" }}
+            {{ $img  := $v.Resize "400x webp drawing" }}
             {{ if eq $i 0 }}
                 {{ $class = "u-featured" }}
             {{ end }}

@@ -8,7 +8,7 @@
 <div class="h-card">
     {{ with .Site.Params.IndieWeb.Hcard.Photo }}
     {{ $img := resources.Get . }}
-    {{ $img := $img.Resize "100x" }}
+    {{ $img := $img.Resize "100x webp drawing" }}
     <img class="u-photo" src="{{ $img.Permalink }}" />
     {{ end }}
     <a class="u-url" href="{{ .Site.BaseURL }}">
