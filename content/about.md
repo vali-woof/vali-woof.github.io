@@ -13,8 +13,18 @@ title: "About"
             find
             some of my stuff in the gallery. There's also more art on my <a rel="me" class="u-url"
                 href="https://bsky.app/profile/vali.link">Bluesky</a> (which contains 18+
-            stuff…).<a rel="me" class="u-url" href="https://vali.link"></a></p>
+            stuff…).<a rel="me" class="u-url" href="https://vali.link"></a>
+        </p>
     </div>
+</div>
+<div class="card">
+    <h3>Tech</h3>
+    <p>
+        One of the things I love is self-hosting! There's a server in my closet which runs Proxmox with a bunch of containers on it. It hosts Navidrome to access my music collection, immich as a Google Photos replacement, Nextcloud for general purpose file syncing and much more. It's also super fun to search the web for new software to self host and try out.
+    </p>
+    <p>
+        My server is an old dual core machine with 8GB of RAM and two 8TB HDDs in RAID 1 for storage.
+    </p>
 </div>
 <div class="card" id="ref">
     <h3>Reference Sheet</h3>
@@ -25,6 +35,7 @@ title: "About"
     <h3>Games</h3>
     These are some nice games in no particular order:
     <ul>
+        <li>Cities: Skylines II</li>
         <li>Hypnospace Outlaw</li>
         <li>Night in the Woods</li>
         <li>Firewatch</li>
