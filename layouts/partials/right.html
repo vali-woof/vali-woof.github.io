@@ -19,3 +19,9 @@
     <img src="/res/8831/gay.bmp" alt="gay">
     <img src="/res/8831/visualstudio.gif" alt="Visual Studio">
 </div>
+
+{{ with resources.Get "img/borzoi/8900e55c8d443d790cb329fa925c6f69.png" }}
+{{ $img := . }}
+{{ $img := $img.Resize "150x webp photo" }}
+<img id="borzoi" src="{{ $img.RelPermalink }}" alt="Photo of a Borzoi standing up, looking at the viewer with it's mouth open" onclick="bark();">
+{{ end }}
