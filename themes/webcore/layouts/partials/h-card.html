@@ -21,10 +21,10 @@
     {{ with .Site.Params.IndieWeb.Hcard.Pronouns }}
     (
     {{ range $k, $v := . }}
-    <a href="{{ .href }}" class="u-pronoun">{{ .value }}</a>
-    {{ if eq $k 0 }}
+    {{ if gt $k 0 }}
         /
     {{ end }}
+    <a href="{{ .href }}" class="u-pronoun">{{ .value }}</a>
     {{ end }}
     )
     {{ end }}

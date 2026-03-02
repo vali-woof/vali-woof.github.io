@@ -10,7 +10,7 @@ theme = "webcore"
     feedLocation = "/posts"
     [params.IndieWeb.Hcard]
         name = "Vali"
-        pronouns = [ { value = "he", href = "https://en.wiktionary.org/wiki/he#Pronoun" }, { value = "they", href = "https://en.wiktionary.org/wiki/they#Pronoun" } ]
+        pronouns = [ { value = "they/them", href = "https://en.wiktionary.org/wiki/they#Pronoun" } ]
         note = "I'm a software engineer and artist on the internet. If you want to check out some of my work, head over to the posts section of my website."
         photo = "/img/pfp-cropped.png"
     [params.IndieWeb.Webmentions]
