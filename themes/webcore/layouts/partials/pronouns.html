@@ -1,0 +1,8 @@
+(
+{{ range $k, $v := . }}
+{{ if gt $k 0 }}
+    /
+{{ end }}
+<a href="{{ .href }}" class="u-pronoun">{{ .value }}</a>
+{{ end }}
+)

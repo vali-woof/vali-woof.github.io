@@ -18,16 +18,7 @@
             {{ .Site.Title }}
         {{ end }}
     </a>
-    {{ with .Site.Params.IndieWeb.Hcard.Pronouns }}
-    (
-    {{ range $k, $v := . }}
-    {{ if gt $k 0 }}
-        /
-    {{ end }}
-    <a href="{{ .href }}" class="u-pronoun">{{ .value }}</a>
-    {{ end }}
-    )
-    {{ end }}
+    {{ partial "pronouns.html" .Site.Params.IndieWeb.Hcard.Pronouns }}
     {{/* <span class="p-honorific-prefix">Dr.</span>
     <span class="p-given-name">Sally</span>
     <abbr class="p-additional-name">K.</abbr>

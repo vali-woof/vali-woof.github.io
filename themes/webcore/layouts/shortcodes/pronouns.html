@@ -1,0 +1,8 @@
+(
+{{ range $k, $v := .Site.Params.IndieWeb.Hcard.Pronouns }}
+{{ if gt $k 0 }}
+    /
+{{ end }}
+<a href="{{ .href }}" class="u-pronoun">{{ .value }}</a>
+{{ end }}
+)
