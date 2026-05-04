@@ -7,7 +7,8 @@ tags:
     - Vali
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3l6srtesfb32y", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3l6srtesfb32y" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3l6srtesfb32y" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/62992704/" }
 ]
 images:
     - "241011_dog of wisdom.png"

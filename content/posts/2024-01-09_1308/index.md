@@ -5,7 +5,8 @@ categories:
     - traditional
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kikcqv74sz22", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kikcqv74sz22" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kikcqv74sz22" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/64889206/" }
 ]
 images:
     - "huh.png"

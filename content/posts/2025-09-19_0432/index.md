@@ -7,7 +7,8 @@ tags:
     - Vali
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3lz5t5il3322s", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3lz5t5il3322s" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3lz5t5il3322s" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/64877173/" }
 ]
 images:
     - "borzoi.jpg"
