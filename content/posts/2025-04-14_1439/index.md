@@ -4,6 +4,8 @@ date: 2025-04-14T14:39:00+01:00
 categories:
     - art
     - traditionalart
+tags:
+    - Borzoi
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3lmrlfzhvlc2n", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3lmrlfzhvlc2n" },

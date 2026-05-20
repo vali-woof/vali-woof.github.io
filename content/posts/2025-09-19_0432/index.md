@@ -4,6 +4,7 @@ date: 2025-09-19T04:32:00+01:00
 categories:
     - furryart
 tags:
+    - Borzoi
     - Vali
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3lz5t5il3322s", hidden: true },
