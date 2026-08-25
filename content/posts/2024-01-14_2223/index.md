@@ -4,7 +4,8 @@ categories:
     - 
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kixu3utk7x2o", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kixu3utk7x2o" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kixu3utk7x2o" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/65005149/" }
 ]
 images:
     - "doggo3.png"

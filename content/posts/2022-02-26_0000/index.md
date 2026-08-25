@@ -4,7 +4,9 @@ categories:
     - art
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k7rmhaunle2s", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k7rmhaunle2s" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k7rmhaunle2s" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/62992795/" },
+    { platform: "Mastodon", url: "https://bark.lgbt/@vali/117158333519973557" }
 ]
 images:
     - "akita.jpg"
