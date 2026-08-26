@@ -28,15 +28,30 @@
         </span>
         {{ end }}
     </div>
+    {{ if .Params.Cw }}
+    <details>
+        <summary class="p-content-warning">{{ .Params.Cw }}</summary>
+        <div class="e-content">
+            {{ .Content }}
+            {{ range $i, $v := .Page.Resources.ByType "image" }}
+                {{ $img := $v.Resize "400x webp drawing" }}
+                <a class="u-photo" href="{{ $v.RelPermalink }}">
+                    <img src="{{ $img.RelPermalink }}" alt="{{ $v.Params.alt }}" >
+                </a>
+            {{ end }}
+        </div>
+    </details>
+    {{ else }}
     <div class="e-content">
         {{ .Content }}
         {{ range $i, $v := .Page.Resources.ByType "image" }}
-            {{ $img  := $v.Resize "400x webp drawing" }}
+            {{ $img := $v.Resize "400x webp drawing" }}
             <a class="u-photo" href="{{ $v.RelPermalink }}">
                 <img src="{{ $img.RelPermalink }}" alt="{{ $v.Params.alt }}" >
             </a>
         {{ end }}
     </div>
+    {{ end }}
     <div class="entry-meta">
         <span class="{{.Params.PostTypes}}">
             {{ if eq .Params.PostTypes "reply" }}
