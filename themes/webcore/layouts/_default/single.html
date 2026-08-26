@@ -1,5 +1,9 @@
 {{ define "title" }}
+  {{ if .Title }}
   {{ .Title }} &ndash; {{ .Site.Title }}
+  {{ else }}
+  {{ .Site.Title }}
+  {{ end }}
 {{ end }}
 {{ define "head" }}
 <link rel="stylesheet" href="/styles/lightbox.css">

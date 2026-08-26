@@ -1,5 +1,9 @@
 {{ define "title" }}
-{{ .Title }} &ndash; {{ .Site.Title }}
+  {{ if .Title }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+  {{ else }}
+  {{ .Site.Title }}
+  {{ end }}
 {{ end }}
 {{ define "head" }}
 {{ with .Site.Params.IndieWeb.Webmentions.MaxWebmentions }}
