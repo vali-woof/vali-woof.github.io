@@ -1,4 +1,5 @@
 ---
+title: Akita
 date: 2022-02-26T00:00:00+02:00
 categories:
     - art

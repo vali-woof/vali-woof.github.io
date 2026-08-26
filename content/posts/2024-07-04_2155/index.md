@@ -1,4 +1,5 @@
 ---
+title: "The Aloha Shirt"
 date: 2024-07-04T21:55:00
 categories: [ "artfight", "artfight2024", "furryart" ]
 syndication: [
