@@ -10,7 +10,7 @@ syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k7jngwnpui2d", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k7jngwnpui2d" },
     { platform: "Furaffinity", url: "https://www.furaffinity.net/view/61354259/" },
-    { platform: "Mastodon", ulr: "https://bark.lgbt/@vali/117164047715098942" }
+    { platform: "Mastodon", url: "https://bark.lgbt/@vali/117164047715098942" }
 ]
 images:
     - "Tisch.jpg"
