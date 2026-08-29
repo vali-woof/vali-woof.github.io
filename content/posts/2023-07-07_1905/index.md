@@ -8,7 +8,8 @@ categories:
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3k7wob4lobu25", hidden: true },
     { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3k7wob4lobu25" },
-    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/61354441/" }
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/61354441/" },
+    { platform: "Mastodon", url: "https://bark.lgbt/@vali/117179860367989575" }
 ]
 images:
     - "WereLycanthrope.jpg"
