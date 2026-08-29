@@ -1,0 +1,8 @@
+{
+  "platform": {
+    "body": [
+      "{ platform: \"${1|Bluesky,Furaffinity,Mastodon|}\", url: \"$2\" }$3"
+    ],
+    "prefix": "platform"
+  }
+}
