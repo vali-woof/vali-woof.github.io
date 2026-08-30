@@ -5,7 +5,8 @@ categories:
     - traditionalart
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kidyhqahy32e", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kidyhqahy32e" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kidyhqahy32e" },
+    { platform: "Mastodon", url: "https://bark.lgbt/@vali/117185167076751069" }
 ]
 images:
     - "cat.png"
