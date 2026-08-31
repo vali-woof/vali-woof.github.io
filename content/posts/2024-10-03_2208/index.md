@@ -18,5 +18,3 @@ posttypes: "post"
 🐴
 
 Giftart for {{< mention "@theotormon.bsky.social" "https://bsky.app/profile/did:plc:vb4m6bnar6bxk6oqcdo7ea22" >}}
-
-{{< category "furryart" >}}

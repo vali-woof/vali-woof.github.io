@@ -19,5 +19,3 @@ resources:
 posttypes: post
 ---
 {{< category "artfight" >}} attack for {{< mention name=@bolidestorm.bsky.social url=https://bolidestorm.bsky.social >}}
-
-{{< category "artfight2025" "furryart" >}}

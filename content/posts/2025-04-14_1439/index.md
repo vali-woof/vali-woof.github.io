@@ -20,5 +20,3 @@ resources:
 posttypes: post
 ---
 Another dog
-
-{{< category "art" >}}

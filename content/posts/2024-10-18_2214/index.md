@@ -18,5 +18,4 @@ resources:
         alt: "my sona as a drawover of the dog from dog of wisdom"
 posttypes: "post"
 ---
-Hababegedabeda<br>
-{{< category "furryart" >}}
+Hababegedabeda

@@ -18,5 +18,4 @@ resources:
         alt: "Sona saying \"Im overstimulated and im eepy\""
 posttypes: "post"
 ---
-Eepy (recolor)<br>
-{{< category "furryart" >}}
+Eepy (recolor)

@@ -20,5 +20,3 @@ posttypes: post
 
 Eepy - First {{< category "artfight" >}} attack of the year<br>
 for {{< mention "@goldenpelt.bsky.social" "https://bsky.app/profile/did:plc:uto4m7xwuvkissehicv6fzw4" >}}
-
-{{< category "artfight2024" "furryart" >}}

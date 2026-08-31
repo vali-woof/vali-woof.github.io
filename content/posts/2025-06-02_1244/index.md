@@ -17,5 +17,3 @@ resources:
 posttypes: post
 ---
 Dog!
-
-{{< category "art" >}}

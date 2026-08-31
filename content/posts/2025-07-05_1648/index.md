@@ -20,5 +20,3 @@ posttypes: post
 ---
 First {{< category "artfight" >}} attack of the year
 for {{< mention name=@werelycanthrope.bsky.social url=https://werelycanthrope.bsky.social >}} (kind of a revenge for last year's attack :3)
-
-{{< category "artfight2025" "furryart" >}}

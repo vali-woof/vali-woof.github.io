@@ -20,5 +20,3 @@ resources:
 posttypes: post
 ---
 You're talking a lot of shit for somebody in fireball range
-
-{{< category "furryart" >}}

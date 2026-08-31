@@ -50,6 +50,13 @@
                 <img src="{{ $img.RelPermalink }}" alt="{{ $v.Params.alt }}" >
             </a>
         {{ end }}
+        {{ with .Params.Categories }}
+        <ul class="categories">
+            {{ range $c := . }}
+            <li>{{ partial "category.html" $c }}</li>
+            {{ end }}
+        </ul>
+        {{ end }}
     </div>
     {{ end }}
     <div class="entry-meta">

@@ -18,5 +18,3 @@ resources:
 posttypes: post
 ---
 Zoi
-
-{{< category "art" >}}

@@ -14,5 +14,3 @@ images:
 posttype: "post"
 ---
 Sona doodle
-
-{{< category "art" "furryart" >}}

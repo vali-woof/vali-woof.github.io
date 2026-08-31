@@ -18,5 +18,3 @@ resources:
 posttypes: post
 ---
 Ok, I think this is another one for my forever WIP pile. I started working on it more than 1,5 years ago. But I could also just call it done…
-
-{{< category "art" >}} {{< category "furryart" >}}

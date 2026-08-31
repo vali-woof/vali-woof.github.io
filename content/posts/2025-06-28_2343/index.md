@@ -19,5 +19,3 @@ resources:
 posttypes: post
 ---
 It's not even July yet and I think, I already found a fossil!
-
-{{< category "furryart" "artfight" "artfight2025" >}}

@@ -18,5 +18,4 @@ resources:
         alt: "An ink drawing of a dog looking into the camera, raising a drawn on eyebrow"
 posttypes: post
 ---
-Doggo2<br>
-{{< category "art" >}}
+Doggo2

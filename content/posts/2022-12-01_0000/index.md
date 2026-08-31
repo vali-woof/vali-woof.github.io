@@ -15,4 +15,3 @@ resources:
         alt: "Ink drawings of 2 frenchie heads"
 posttypes: post
 ---
-{{< category "art" >}}

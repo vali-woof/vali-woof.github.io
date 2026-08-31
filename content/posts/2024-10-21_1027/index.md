@@ -19,5 +19,4 @@ resources:
         alt: "drawover of a picture of a borzoi peeking through the door"
 posttypes: "post"
 ---
-Hehehehe<br>
-{{< category "furryart" >}}
+Hehehehe

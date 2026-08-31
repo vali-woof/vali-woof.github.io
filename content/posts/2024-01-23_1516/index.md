@@ -15,5 +15,4 @@ resources:
         alt: "An ink drawing of a dog wearing a winter hat with a pompom"
 posttypes: post
 ---
-Doggo 4<br>
-{{< category "art" >}}
+Doggo 4

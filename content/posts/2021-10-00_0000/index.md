@@ -20,5 +20,3 @@ posttypes: post
 🐶🐶🐶
 
 Alcohol marker drawing of Cerberus
-
-{{< category art >}}

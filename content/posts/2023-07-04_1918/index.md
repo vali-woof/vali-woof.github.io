@@ -23,5 +23,3 @@ posttypes: post
 🧛‍♂️ The Countotter<br>
 ⚔️ Art Fight 2023<br>
 Attack on {{< mention "@tischotter.com" "https://bsky.app/profile/did:plc:efwaw7okgtg7nfetg45kjhtg">}}
-
-{{< category "furryart" >}}

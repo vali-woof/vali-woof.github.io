@@ -18,4 +18,3 @@ resources:
         alt: "felt tip pen drawing of a cat's face"
 posttypes: post
 ---
-{{< category "art" >}}

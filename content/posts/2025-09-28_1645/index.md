@@ -16,5 +16,3 @@ resources:
 posttypes: post
 ---
 Honse
-
-{{< category "art" >}}

@@ -20,5 +20,3 @@ featured: true
 posttypes: post
 ---
 🦌
-
-{{< category "art" "furryart" >}}

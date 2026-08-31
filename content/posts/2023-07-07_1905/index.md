@@ -27,5 +27,3 @@ Watch out, felines.
 {{< mention "@werelycanthrope.bsky.social" "https://bsky.app/profile/did:plc:2fysggmrge4qwtemxbfce5xh" >}} is on the loose.
 
 ⚔️ Art Fight 2023
-
-{{< category "furryart" >}}

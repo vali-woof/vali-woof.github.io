@@ -15,5 +15,3 @@ resources:
 posttypes: post
 ---
 Hay there
-
-{{< category "art" >}}

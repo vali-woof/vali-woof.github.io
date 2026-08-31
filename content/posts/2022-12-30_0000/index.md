@@ -15,4 +15,3 @@ resources:
         alt: "A watercolor painting of three pink roses"
 posttypes: post
 ---
-{{< category "art" "traditionalart" >}}

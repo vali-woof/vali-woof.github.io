@@ -18,5 +18,3 @@ posttypes: post
 ---
 Another {{< category "artfight" >}} attack<br>
 for {{< mention "@wolfsbark.bsky.social" "https://bsky.app/profile/did:plc:nsns4cvjw73qhgypcgqg5v7n" >}}
-
-{{< category "artfight2024" "furryart" >}}

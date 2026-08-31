@@ -19,5 +19,3 @@ resources:
 posttypes: post
 ---
 Snoot
-
-{{< category "art" >}} {{< category "furryart" >}}

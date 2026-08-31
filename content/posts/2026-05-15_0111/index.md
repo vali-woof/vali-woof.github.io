@@ -18,5 +18,3 @@ resources:
 posttypes: post
 ---
 Borzoi but wizard
-
-{{< category "art" >}}
