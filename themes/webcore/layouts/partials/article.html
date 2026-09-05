@@ -77,12 +77,14 @@
             {{ else }}
                 &nbsp;by&nbsp;
                 <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">
-                {{ with .Site.Params.IndieWeb.Hcard.Photo }}
-                    {{ $img := resources.Get . }}
+                {{ with .Site.Params.IndieWeb.Hcard }}
+                {{ $img := resources.Get .Photo }}
                     {{ $img := $img.Resize "25x" }}
                     <img class="u-photo" src="{{ $img.Permalink }}" alt="Sona Portrait" />
+                    <span class="p-name">
+                        {{ .Name }}
+                    </span>
                 {{ end }}
-                    {{ .Site.Params.IndieWeb.Hcard.Name }}
                 </a>
             {{ end }}
         </span>
