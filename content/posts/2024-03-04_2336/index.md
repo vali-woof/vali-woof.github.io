@@ -5,7 +5,8 @@ categories:
     - furryart
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3kyxlnu46er2l", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kyxlnu46er2l" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3kyxlnu46er2l" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/66610464/" }
 ]
 images:
     - "triangledog.jpg"

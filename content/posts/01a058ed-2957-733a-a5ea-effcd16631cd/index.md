@@ -6,7 +6,8 @@ categories:
     - traditionalart
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3khzy7zmnsr2x", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3khzy7zmnsr2x" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3khzy7zmnsr2x" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/66609861/" }
 ]
 images:
     - "bafkreib5v2plmo2lj3auv245aizc2zl3nypd3qt7vsrykfvkfhtxujyyhq.webp"

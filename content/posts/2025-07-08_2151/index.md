@@ -8,7 +8,8 @@ categories:
     - furryart
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3lti36h2zw22c", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3lti36h2zw22c" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3lti36h2zw22c" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/66610132/" }
 ]
 images:
     - "bolide.jpg"

@@ -9,7 +9,8 @@ tags:
     - Borzoi
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3mltwvchs5c2a", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3mltwvchs5c2a" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3mltwvchs5c2a" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/66653084/" }
 ]
 images:
     - "bafkreihhkyftdj6aiyx5el36qv3jrzoqh5yoeyny2vyzvj2owtk4fvl43u.webp"

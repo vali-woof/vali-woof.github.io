@@ -8,7 +8,8 @@ tags:
     - Vali
 syndication: [
     { platform: "Bluesky", url: "https://bsky.app/profile/did:plc:tjkokzqdnfzzlaxdjjzzzi5b/post/3laevkwpaj72g", hidden: true },
-    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3laevkwpaj72g" }
+    { platform: "Bluesky", url: "https://bsky.app/profile/vali.link/post/3laevkwpaj72g" },
+    { platform: "Furaffinity", url: "https://www.furaffinity.net/view/66562476/" }
 ]
 images:
     - "241107_drawover.jpg"
