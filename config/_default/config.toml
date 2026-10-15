@@ -8,6 +8,7 @@ theme = "webcore"
         { name = "artfight", url = "https://artfight.net/~vali_woof" }, { name = "furaffinity", url = "https://www.furaffinity.net/user/valiwoof/" },
         { name ="github", url = "https://github.com/vali-woof" }, { name = "mastodon", url = "https://bark.lgbt/@vali" } ]
     feedLocation = "/posts"
+    IndieAuth = "https://indiekey.id/.well-known/oauth-authorization-server/s/sg8tamppk8g1d8mn"
     [params.IndieWeb.Hcard]
         name = "Vali"
         pronouns = [ { value = "they/them", href = "https://en.wiktionary.org/wiki/they#Pronoun" } ]

@@ -35,7 +35,9 @@
     {{ with .Site.Params.IndieWeb.Webmentions.Url }}
         <link rel="webmention" href="{{ . }}" />
     {{ end }}
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    {{ with .Site.Params.IndieWeb.IndieAuth }}
+        <link rel="indieauth-metadata" href="{{ . }}">
+    {{ end }}
     {{ with .Site.Params.IndieWeb.FeedLocation }}
         <link rel="feed" href="{{ . | absURL }}">
     {{ end }}

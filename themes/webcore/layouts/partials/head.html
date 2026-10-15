@@ -24,9 +24,8 @@
 <link rel="me" href="https://twitter.com/{{ . }}">{{ end }}
 {{ with .Site.Params.IndieWeb.MicroBlogUser }}
 <link rel="me" href="https://micro.blog/{{ . }}">{{ end }}
-<!-- IndieWeb endpoints -->
-<link rel="authorization_endpoint" href={{ .Site.Params.endpoints.Auth | default "https://indieauth.com/auth" }} />
-<link rel="token_endpoint" href={{ .Site.Params.endpoints.Token | default "https://tokens.indieauth.com/token" }} />
+{{ with .Site.Params.IndieWeb.IndieAuth }}
+<link rel="indieauth-metadata" href="{{ . }}">{{ end }}
 {{ with .Site.Params.endpoints.Micropub }}
 <link rel="micropub" href="{{ . }}" />{{ end }}
 {{ with .Site.Params.endpoints.Microsub }}
