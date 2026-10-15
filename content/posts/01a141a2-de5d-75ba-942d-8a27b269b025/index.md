@@ -1,4 +1,7 @@
 ---
+title: Leggy
+aliases: 
+    - 2021-08-31_0000
 date: 2021-08-31
 categories:
     - art
