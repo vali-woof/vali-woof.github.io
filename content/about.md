@@ -51,7 +51,7 @@ If you aren't a robot you can also send some electronic mail my way:
 webmaster <img src="/res/dog.gif" onclick="bark();"> vali dot link. (You obviously need to replace that
 image with the @ symbol…)
 
-### Links
-[Here](/links) are some sources and tools I used to create this site.
+### How it's made
+[Here](/how-its-made) are some sources and tools I used to create this site.
 
 [&ShortUpArrow; Top](#top)
