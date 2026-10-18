@@ -5,11 +5,11 @@
     <span class="p-note">{{ .Site.hcard.note }}</span>
 </div> */}}
 
-<div class="h-card">
+<div class="h-card img-wrap-left">
     {{ with .Site.Params.IndieWeb.Hcard.Photo }}
     {{ $img := resources.Get . }}
     {{ $img := $img.Resize "100x webp drawing" }}
-    <img class="u-photo" src="{{ $img.Permalink }}" />
+    <img class="u-photo img-wrap-left" src="{{ $img.Permalink }}" />
     {{ end }}
     <a class="u-url" href="{{ .Site.BaseURL }}">
         {{ with .Site.Params.IndieWeb.Hcard.Name }}

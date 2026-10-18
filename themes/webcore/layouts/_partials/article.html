@@ -9,19 +9,19 @@
         {{ if in (slice "reply" "repost" "like") .Params.PostTypes }}
         <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;display: inline-block;width: inherit;">
             {{ partial "icon.html" (dict "name" .Params.PostTypes "width" "24" "height" "24") }}
-            
+
             {{ $class := "" }}
-    
+
             {{ if eq .Params.PostTypes "reply" }}
-                {{ $class := "u-in-reply-to" }}
+            {{ $class := "u-in-reply-to" }}
             {{ else if eq .Params.PostTypes "like" }}
-                {{ $class := "u-like-of" }}
+            {{ $class := "u-like-of" }}
             {{ else if eq .Params.PostTypes "repost" }}
-                {{ $class := "u-repost-of" }}
+            {{ $class := "u-repost-of" }}
             {{ end }}
-    
+
             {{ with .Params.Origin.Url }}
-                <a class="{{ $class }}" href="{{ . }}">{{ . }}</a>
+            <a class="{{ $class }}" href="{{ . }}">{{ . }}</a>
             {{ end }}
         </span>
         {{ end }}
@@ -32,10 +32,10 @@
         <div class="e-content">
             {{ .Content }}
             {{ range $i, $v := .Page.Resources.ByType "image" }}
-                {{ $img := $v.Resize "400x webp drawing" }}
-                <a class="u-photo" href="{{ $v.RelPermalink }}">
-                    <img src="{{ $img.RelPermalink }}" alt="{{ $v.Params.alt }}" >
-                </a>
+            {{ $img := $v.Resize "400x webp drawing" }}
+            <a class="u-photo" href="{{ $v.RelPermalink }}">
+                <img src="{{ $img.RelPermalink }}" alt="{{ $v.Params.alt }}">
+            </a>
             {{ end }}
         </div>
     </details>
@@ -43,10 +43,10 @@
     <div class="e-content">
         {{ .Content }}
         {{ range $i, $v := .Page.Resources.ByType "image" }}
-            {{ $img := $v.Resize "400x webp drawing" }}
-            <a class="u-photo" href="{{ $v.RelPermalink }}">
-                <img src="{{ $img.RelPermalink }}" alt="{{ $v.Params.alt }}" >
-            </a>
+        {{ $img := $v.Resize "400x webp drawing" }}
+        <a class="u-photo" href="{{ $v.RelPermalink }}">
+            <img src="{{ $img.RelPermalink }}" alt="{{ $v.Params.alt }}">
+        </a>
         {{ end }}
         {{ with .Params.Categories }}
         <ul class="categories">
@@ -60,30 +60,36 @@
     <div class="entry-meta">
         <span class="{{.Params.PostTypes}}">
             {{ if eq .Params.PostTypes "reply" }}
-                replied
+            replied
             {{ else if eq .Params.PostTypes "like" }}
-                liked
+            liked
             {{ else if eq .Params.PostTypes "repost" }}
-                reposted
+            reposted
             {{ else }}
-                posted
+            posted
             {{ end }}
-            &nbsp;<time class="dt-published" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "Jan 02, 2006 15:04" }}</time>
-            
+
+            {{ $date := .Date }}
+
+            {{ if .PublishDate }}
+            {{ $date := .PublishDate }}
+            {{ end }}
+            &nbsp;<time class="dt-published" datetime="{{ $date.Format " 2006-01-02" }}">{{ $date | time.Format "Jan 02, 2006 15:04" }}</time>
+
             {{ with .Params.Author }}
             — original post by&nbsp;<a rel="author" class="p-author h-card" href="{{ .Url }}">{{ .Name }}</a>
             {{ else }}
-                &nbsp;by&nbsp;
-                <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">
+            &nbsp;by&nbsp;
+            <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">
                 {{ with .Site.Params.IndieWeb.Hcard }}
                 {{ $img := resources.Get .Photo }}
-                    {{ $img := $img.Resize "25x" }}
-                    <img class="u-photo" src="{{ $img.Permalink }}" alt="Sona Portrait" />
-                    <span class="p-name">
-                        {{ .Name }}
-                    </span>
+                {{ $img := $img.Resize "25x" }}
+                <img class="u-photo" src="{{ $img.Permalink }}" alt="Sona Portrait" />
+                <span class="p-name">
+                    {{ .Name }}
+                </span>
                 {{ end }}
-                </a>
+            </a>
             {{ end }}
         </span>
         {{ with .Params.Syndication }}
