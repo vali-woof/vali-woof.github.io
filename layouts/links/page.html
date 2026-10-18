@@ -1,0 +1,38 @@
+{{ define "head" }}
+<style>
+    .links > li {
+        line-height: 2.5;
+    }
+    .links > li > p {
+        line-height: normal;
+    }
+</style>
+{{ end }}
+
+{{ define "main" }}
+{{ partial "breadcrumb.html" . }}
+<h2>{{ .Title }}</h2>
+
+{{ .Content }}
+
+{{ with .Site.Params.IndieWeb.Urls }}
+    <ul class="links">
+        {{ range . }}
+        <li>
+            {{ if .Params.IncludeIcons }}
+            {{ partial "icon.html" (dict "name" .name "width" "16pt" "height" "16pt") }}
+            {{ end }}
+            {{ .pretty }}: 
+            <a style="text-decoration: none;" href="{{ .url }}" target="_blank" rel="me">
+                {{ .user }}
+            </a>
+            {{ with .comment }}
+            <p>
+                {{.}}
+            </p>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+{{ end }}
+{{ end }}

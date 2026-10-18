@@ -4,9 +4,12 @@ title = "Vali's Homepage"
 theme = "webcore"
 
 [params.IndieWeb]
-    urls = [ { name = "bluesky", url = "https://bsky.app/profile/vali.link" }, { name = "twitch", url = "https://twitch.tv/vali_woof" },
-        { name = "artfight", url = "https://artfight.net/~vali_woof" }, { name = "furaffinity", url = "https://www.furaffinity.net/user/valiwoof/" },
-        { name ="github", url = "https://github.com/vali-woof" }, { name = "mastodon", url = "https://bark.lgbt/@vali" } ]
+    urls = [ { name = "bluesky", pretty = "BlueSky", user="vali.link", url = "https://bsky.app/profile/vali.link", comment = "This is the place I'm currently most active at." },
+        { name = "furaffinity", pretty = "FurAffinity", user="valiwoof", url = "https://www.furaffinity.net/user/valiwoof/", comment = "At the moment, I'm slowly trying to get the gallery up to speed." },
+        { name = "mastodon", pretty = "Mastodon", user="vali@bark.lgbt", url = "https://bark.lgbt/@vali" } ,
+        { name = "twitch", pretty = "Twitch", user = "vali_woof", url = "https://twitch.tv/vali_woof", comment = "Not really streaming, mostly just lurking" },
+        { name = "artfight", pretty = "Art Fight", user = "vali_woof", url = "https://artfight.net/~vali_woof" },
+        { name ="github", pretty = "GitHub", user = "vali-woof", url = "https://github.com/vali-woof", comment = "My website lives here."} ]
     feedLocation = "/posts"
     IndieAuth = "https://indiekey.id/.well-known/oauth-authorization-server/s/sg8tamppk8g1d8mn"
     [params.IndieWeb.Hcard]

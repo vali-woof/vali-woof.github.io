@@ -42,10 +42,7 @@ Games I've started but haven't finished yet:
 - Hades
 
 ### Places
-You can also find me on these websites:
-- <a target="_blank" href="https://artfight.net/~vali_woof">Art Fight</a>
-- <a target="_blank" href="https://bsky.app/profile/vali.link">Bluesky</a>
-- <a target="_blank" href="https://twitch.tv/vali_woof">Twitch</a> (not actively streaming though)
+You can also find me on [these websites](/links).
 
 If you aren't a robot you can also send some electronic mail my way: 
 webmaster <img src="/res/dog.gif" onclick="bark();"> vali dot link. (You obviously need to replace that
