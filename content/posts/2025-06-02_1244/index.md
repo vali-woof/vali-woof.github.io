@@ -16,5 +16,6 @@ resources:
       params:
         alt: "graphite portrait sketch of a dog (borzoi)"
 posttypes: post
+featured: true
 ---
 Dog!

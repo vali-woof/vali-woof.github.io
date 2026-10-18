@@ -17,7 +17,6 @@ resources:
     - src: "WereLycanthrope.jpg"
       params:
         alt: "A painting of Werelycanthrope's fursona opening his maw, ready to eat a sandwich. A cat's head is peeking out of the front of the sandwich."
-featured: true
 posttypes: post
 ---
 🥪 Nomnomnom
